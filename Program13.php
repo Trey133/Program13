@@ -57,7 +57,7 @@
 <body class="no-js">
 <h1><ins><big><big>Program13</big></big></ins></h1>
 <?php
-include('includes/nav.php');
+include('Program13.me/nav.php');
 ?>
 <script src="js/jquery.js"></script>
 <script src="js/modernizr.js"></script>
