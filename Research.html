@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Program13.css"/>
+<link rel="stylesheet" href="StyleSheet1.css">
+<html>
+<head>
+
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="generator" content="Bluefish 2.2.5" />
+  <meta name="created" content="00:00:00" />
+  <meta name="changedby" content="Debian user" />
+  <meta name="changed" content="2016-04-04T05:03:53.152885987" />
+  <!-- saved from url=(0033)http://localhost:50453/index.html -->
+  <style type="text/css">
+      h2.cjk {
+          font-family: "AR PL UKai CN";
+      }
+
+      h2.ctl {
+          font-family: "Lohit Devanagari";
+      }
+
+      h3.cjk {
+          font-family: "AR PL UKai CN";
+      }
+
+      h3.ctl {
+          font-family: "Lohit Devanagari";
+      }
+
+      h4.cjk {
+          font-family: "AR PL UKai CN";
+      }
+
+      h4.ctl {
+          font-family: "Lohit Devanagari";
+      }
+  </style>
+
+  <script>
+      function allowDrop(ev) {
+          ev.preventDefault();
+      }
+
+      function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+      }
+      function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+
+          ev.target.appendChild(document.getElementById(data));
+      }
+  </script>
+</head>
+<body class="no-js">
+<h1><ins><big><big>Program13</big></big></ins></h1>
+<nav id="topNav">
+    <ul>
+        <li class="dropdown">
+            <a href="Program13.html" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+            </div>
+    </ul>
+
+    <ul>
+        <li class="dropdown">
+            <a href="Program.html" class="dropbtn">Programming</a>
+            <div class="dropdown-content">
+
+
+                <a href="Program.html" title="Friendly Prog">Friendly Programs</a>
+
+                <a href="Mayhem.html" title="Digital">Digital Mayhem</a>
+
+                <a href="CodingSources.html" title="Resources">Resources</a>
+
+                <a href="CDMI.html" title="CMDI">CMD Prompt Index</a>
+                <a href="Onionsitelist.html" title="Onion List" >Onion List</a>
+
+            </div>
+
+
+    </ul>
+
+    <ul>
+        <li class="dropdown">
+            <a href="#Onion" class="dropbtn">Onion</a>
+            <div class="dropdown-content">
+                <a href="#.onion" title=".onion sites">.Onion Site List</a>
+                <a href="onioninfo.html" title="Onion Info">Onion Info</a>
+                <a href="#end" title="Conclusion">Conclusion</a>
+
+            </div>
+    </ul>
+    <ul>
+        <li class="dropdown">
+            <a href="GraphAlph.html" class="dropbtn">The Graphologist's Alphabet</a>
+            <div class="dropdown-content">
+                <a href="GraphAlph.html" title="Graph. Alph. ">Graphologist's Alphabet</a>
+
+
+
+            </div>
+    </ul>
+    <ul>
+        <li class="dropdown">
+            <a href="#LifeHack" class="dropbtn">Life Hack</a>
+            <div class="dropdown-content">
+                <a href="LifeHack.html" title="LifeHack">Life Hacks</a>
+                <a href="Survival.html" title="Survival">Survival</a>
+                <a href="66Laws.html" title="66Laws">66 Laws</a>
+
+            </div>
+    </ul>
+
+    <ul>
+        <li class="dropdown">
+            <a href="#FirstAid" class="dropbtn">First Aid</a>
+            <div class="dropdown-content">
+                <a href="FirstAid.html" title="FirstAid">First Aid</a>
+
+            </div>
+    </ul>
+    <ul>
+        <li class="dropdown">
+            <a href="" class="dropbtn">Measurement Conversions</a>
+            <div class="dropdown-content">
+                <a href="MeasConv.html" title="Meas. Conv.">Measurement Conversions</a>
+
+            </div>
+    </ul>
+    <ul>
+        <li class="dropdown" id="Hackinginfo">
+            <a href="" class="dropbtn">H4ck1ng 1nf0</a>
+            <div class="dropdown-content">
+                <a href="https://www.concise-courses.com/hacking-tools/" title="" target="_blank">Cyborg Tutorials</a>
+                <a href="HelpfulVideos.html" title="Helpful Videos">Helpful Videos</a>
+                <a href="ProgrammersLibrary.html" title="ProgramLib">Programmers Library</a>
+                <a href="http://www.cprogramming.com/" target="_blank">C Programming</a>
+                <a href="https://www.python.org/" target="_blank">Python</a>
+
+            </div>
+    </ul>
+
+    <ul>
+        <li class="dropdown">
+            <a href="#Lib" class="dropbtn">Library</a>
+            <div class="dropdown-content">
+                <a href="Library.html" title="Library">Library</a>
+                <a href="Research.html" title="Research">Research</a>
+                <a href="Images.html" title="Images">Images</a>
+
+            </div>
+    </ul>
+
+    <ul>
+        <li class="dropdown" id="Useful Links">
+            <a href="#Useful Links" class="dropbtn">Useful Links</a>
+            <div class="dropdown-content">
+                <a href="https://check.torproject.org" target="_blank">Tor Check</a>
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="https://www.deeperweb.com" target="_blank">Deeper Web</a>
+                <a href="http://www.dummies.com" target="_blank">For Dummies.com</a>
+                <a href="http://1000lifehacks.com" target="_blank">Life Hacks.com</a>
+                <a href="https://www.torproject.org/projects/torbrowser.html.en" target="_blank">Tor Project</a>
+                <a href="https://tails.boum.org/" target="_blank">The Amnesic Incognito Live System (TAILS)</a>
+                <a href="https://guardianproject.info/apps/orbot/" target="_blank">Orbot (Tor for Android)</a>
+                <a href="https://www.torproject.org/docs/documentation.html.en" target="_blank">Tor Documentation</a>
+                <a href="http://vlib.org/" target="_blank">Vlib</a>
+                <a href="http://deep-web.org/how-to-research/deep-web-search-engines/" target="_blank">Deep-Web.org</a>
+                <a href="http://nsarchive.gwu.edu/search.html" target="_blank">National Security Archive</a>
+                <a href="http://library.si.edu/" target="_blank">Smithsonian Libraries</a>
+                <a href="http://www.osti.gov/home/" target="_blank">US Dept. of Energy OSTI</a>
+                <a href="https://www.quandl.com/" target="_blank">Quandl (Financial and Economic Database)</a>
+                <a href="http://eric.ed.gov/" target="_blank">Institute of Education Sciences</a>
+
+            </div>
+    </ul>
+
+    <ul>
+        <li class="dropdown">
+            <a href="Chat.html" class="dropbtn">Chat</a>
+            <div class="dropdown-content">
+                <a href="Chat.html" title="Chat" target="_blank">ChatRoom</a>
+            </div>
+    </ul>
+
+</nav>
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+<br />
+<br />
+<br />
+<hr />
+<br />
+
+<br />
+<br />
+<hr />
+<br />
+
+<script>
+  (function() {
+    var cx = '015592198508648376051:mrjdmskf0_q';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br />
+<hr />
+<big><big>
+<br />
+  <br/>
+<h1><ins><big><big>General Research</big></big></ins></h1>
+<br/>
+<script>
+  (function() {
+    var cx = '015592198508648376051:xngklwobrtw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<br/>
+<a href="http://education.iseek.com/iseek/home.page">iSEEK</a>
+<br/>
+<a href="http://memory.loc.gov/ammem/index.html">LOC American Memory</a>
+<br/>
+<a href="http://www.refseek.com/">RefSeek</a>
+<br/>
+<a href="http://www.virtuallrc.com/">Virtual LRC</a>
+<br/>
+<a href="http://dlc.dlib.indiana.edu/dlc/">DLC</a>
+<br/>
+<a href="http://www.oclc.org/oaister.en.html">OCLC</a>
+<br/>
+<a href="http://academic.research.microsoft.com/">Microsoft Academic</a>
+<br/>
+<a href="https://www.google.com/trends/correlate/">Google Correlate</a>
+<br/>
+<a href="http://www.wolframalpha.com/tour/examples.html">Wolfram Alpha</a>
+<br/>
+<h1><ins><big><big>Meta</big></big></ins></h1>
+<br/>
+<script>
+  (function() {
+    var cx = '015592198508648376051:nhwigugs1ks';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<br/>
+<a href="http://www.dogpile.com/">DogPile</a>
+<br/>
+<a href="http://msxml.excite.com/">MetaCrawler</a>
+<br/>
+<a href="http://mamma.com/">Mamma</a>
+<br/>
+<h1><ins><big><big>Databases and Archives</big></big></ins></h1>
+<br/>
+<script>
+  (function() {
+    var cx = '015592198508648376051:nutwttgvufc';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<br/>
+<a href="https://www.loc.gov">Library of Congress</a>
+<br/>
+<a href="http://archiveshub.ac.uk/index.html">Archives Hub</a>
+<br/>
+<a href="http://www.archives.gov/research/catalog/">National Archives</a>
+<br/>
+<a href="http://arxiv.org/">Cornell University</a>
+<br/>
+<a href="http://www.archiefnet.nl/index.asp?taal=en">ArchiveNet</a>
+<br/>
+<a href="http://www.nal.usda.gov/">USDA</a>
+<br/>
+<a href="http://www.siris.si.edu/">SIRIS</a>
+<br/>
+<a href="http://www.bl.uk/indexmenuonly.shtml#tabcollns">British Library</a>
+<br/>
+<a href="https://www.cia.gov/library/publications/the-world-factbook/index.html">CIA FactBook</a>
+<br/>
+<a href="http://www.ncsl.org/aboutus/ncslservice/state-legislative-websites-directory.aspx">NCSL</a>
+<br/>
+<a href="http://www.opendoar.org/search.php">OpenDOAR</a>
+<br/>
+<a href="http://catalog.gpo.gov/F?RN=217638743">US Govt Publications</a>
+<br/>
+<h2><ins><big><big>Books and Journals</big></big></ins></h2>
+<br/>
+<script>
+  (function() {
+    var cx = '015592198508648376051:kq1wgcytw4s';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<br/>
+<a href="http://www.gutenberg.org/">Project Gutenberg</a>
+<br/>
+<a href="http://www.ccel.org/">Christain Classics Ethereal Library</a>
+<br/>
+<a href="http://www.ipl.org/">IPL2</a>
+<br/>
+<a href="http://www.lib.umich.edu/clark-library">University of Michigan Library</a>
+<br/>
+<a href="http://digitalcollections.nypl.org/">NYPL Digital Collection</a>
+<br/>
+<a href="https://www.plos.org/">PLOS</a>
+<br/>
+<a href="http://infomine.ucr.edu/">UCR Library</a>
+<br/>
+<a href="http://www.bartleby.com/">Bartleby</a>
+<br/>
+<a href="http://www.worldcat.org/">World Cat</a>
+<br/>
+<a href="https://books.google.com/">Google Books</a>
+<br/>
+<a href="http://vadlo.com/">Vadlo</a>
+<br/>
+<a href="https://openlibrary.org/">Open Library</a>
+<br/>
+<a href="http://www.ojose.com/">OJOSE</a>
+<br/>
+<a href="https://scholar.google.com/">Google Scholar</a>
+<br/>
+<a href="http://www.bioline.org.br/">Bioline international</a>
+<br/>
+<a href="http://link.springer.com/">Springer Link</a>
+<br/>
+<a href="https://doaj.org/">DOAJ</a>
+<br/>
+<a href="http://www.jurn.org/">JURN</a>
+<br/>
+<h2><ins>Science</ins></h2>
+<br/>
+<a href="http://sultan.tnstate.edu/search/o54462029">TSU Library</a>
+<br/>
+<a href="http://discoverlibrary.vanderbilt.edu/primo_library/libweb/action/search.do?vid=VANDERBILT&reset_config=true">Vanderbilt Library</a>
+<br/>
+<a href="http://www.sciseek.com/">SciSeek</a>
+<br/>
+<a href="http://www.biologybrowser.org/">Biology Browser</a>
+<br/>
+<a href="http://www.athenus.com/">Athenus</a>
+<br/>
+<a href="http://www.scicentral.com/">SciCentral</a>
+<br/>
+<a href="http://www.strategian.com/">Strategian</a>
+<br/>
+<a href="http://www.science.gov/">Science.gov</a>
+<br/>
+<a href="http://cds.cern.ch/">CERN Document Server</a>
+<br/>
+<a href="http://home.asdlib.org/">ASDL</a>
+<br/>
+<a href="http://worldwidescience.org/">World Wide Science</a>
+<br/>
+<h2><ins>Math and Technology</ins></h2>
+<br/>
+<a href="http://digital-library.theiet.org/?origin=globalBar">IET Digital Library</a>
+<br/>
+<a href="http://www.mathguide.de/">Math Guide</a>
+<br/>
+<a href="https://zbmath.org/">ZbMath</a>
+<br/>
+<a href="http://www.theiet.org/resources/inspec/">INSPEC</a>
+<br/>
+<a href="http://citeseer.ist.psu.edu/index;jsessionid=CE8F095651C7C2F287F87DF758EAA8EC">SiteSeerX</a>
+<br/>
+<a href="http://liinwww.ira.uka.de/bibliography/">CCSB</a>
+<br/>
+<a href="http://adsabs.harvard.edu/">SAO/NASA ADS</a>
+<br/>
+<h2><ins>Social Science</ins></h2>
+<br/>
+<a href="http://journals.cambridge.org/action/displayJournal?jid=BBS">Behavioral Brain Science Archive</a>
+<br/>
+<a href="http://www.ssrn.com/en/">Social Science Research Network</a>
+<br/>
+<a href="http://www.psycline.org/">Psycline</a>
+<br/>
+<a href="http://thomsonreuters.com/en/products-services/scholarly-scientific-research/scholarly-search-and-discovery/social-sciences-citation-index.html">Social Sciences Citation Index</a>
+<br/>
+<a href="http://www.ethnologue.com/">Ethnologue</a>
+<br/>
+<a href="http://www.sociosite.net/">Sociosite</a>
+<br/>
+<a href="https://cse.google.com/cse/home?cx=005979862114578360618:m4tyzwl8izq">WikiArt</a>
+<br/>
+<a href="http://www.politicalinformation.com/">Political Information</a>
+<br/>
+<a href="http://www.psychology.org/">Encyclopedia of Psychology</a>
+<br/>
+<a href="http://wings.buffalo.edu/ARD/">Anthropology Review Database</a>
+<br/>
+<h2><ins>History</ins></h2>
+<br/>
+<a href="http://www.davidrumsey.com/view.html">David Rumsey Map Collection</a>
+<br/>
+<a href="http://www.lse.ac.uk/library/collections/featuredCollections/womensLibraryLSE.aspx">Genesis</a>
+<br/>
+<a href="https://www.fold3.com/">Fold3</a>
+<br/>
+<a href="http://legacy.fordham.edu/halsall/mod/modsbook.asp">Modern History Sourcebook</a>
+<br/>
+<a href="http://aac.sub.uni-goettingen.de/en/history/guide/">Library of Anglo-American Culture</a>
+<br/>
+<a href="http://historybuff.com/">History Buff</a>
+<br/>
+<a href="http://www.digitalhistory.uh.edu/">Digital History</a>
+<br/>
+<a href="http://legacy.fordham.edu/halsall/ancient/asbook.asp">Ancient History Sourcebook</a>
+<br/>
+<a href="https://www.wyzant.com/resources/lessons/history/hpol">History and Politics Outloud</a>
+<br/>
+<a href="http://historyengine.richmond.edu/">History Engine</a>
+<br/>
+<h2><ins>Business and Economics</ins></h2>
+<br/>
+<a href="http://ocw.mit.edu/courses/economics/">MIT Economics</a>
+<br/>
+<a href="http://www.economist.com/">The Economist</a>
+<br/>
+<a href="http://www.econlib.org/">Library of Economics and Liberty</a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+<a href=""></a>
+<br/>
+</big></big>
+</body>
+</html>
