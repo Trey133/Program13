@@ -4,7 +4,10 @@ layout: default
 <link rel="stylesheet" href="FileShare.css"/>
 <input type="file" id="uploadme" />
 <input type="button" id="clickme" value="Share A File!" />
-
+input[type=file] { 
+    width: 1px; 
+    visibility: hidden;
+}
 $(function(){
     $('#clickme').click(function(){
         $('#uploadme').click();
