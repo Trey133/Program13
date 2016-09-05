@@ -1,15 +1,7 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="FileShare.css"/>
-<input type="file" id="uploadme" />
-<input type="button" id="clickme" value="Share A File!" />
-input[type=file] { 
-    width: 1px; 
-    visibility: hidden;
-}
-$(function(){
-    $('#clickme').click(function(){
-        $('#uploadme').click();
-    });
-});
+<form method="post" action="file-upload-1.htm" name="submit" enctype="multipart/form-data">
+<input type="file" name="fileField"><br /><br />
+<input type="submit" name="submit" value="Submit">
+</form>
