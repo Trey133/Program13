@@ -6,6 +6,17 @@
     font-family: fantasy;
     text-align: center;
 }
+h3{
+border:solid;
+    border-width:3px;
+    border-color:lime;
+}
+p{
+    border:dotted;
+    border-width:3px;
+    border-color:lime;
+    text-shadow:20px 12px 2px #ffffff;
+}
 
 <style>
 ul {
