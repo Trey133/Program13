@@ -18,6 +18,12 @@ h1 {
 a {
   color: limegreen;
   font-size: 20;
+  p {
+    text-shadow: 20px 12px 3px #ff0000;
+}
+article {
+    text-shadow: 20px 12px 3px #ff0000;
+}
 }
 .sideright {
 background-color: black;
