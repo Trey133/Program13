@@ -5,6 +5,7 @@ font-family: fantasy;
 font-size: 18;
 color: limegreen;
 text-align: center;
+text-shadow: 20px 12px 3px #ff0000;
 }
 li {
   text-align: center;
