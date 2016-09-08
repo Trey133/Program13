@@ -22,9 +22,81 @@ layout: default
 <gcse:search></gcse:search>
 
     <br/>
+    <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#Fire">Fire</a>
+  <a href="#Bow">Bow</a>
+  <a href="#Drill">Drill</a>
+  <a href="#Fireboard">Fireboard</a>
+  <a href="startafire">Using A Bow And Drill</a>
+  <a href="#Cordage">Cordage</a>
+  <a href="#"></a>
+  <a href="#"></a>
+</div>
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<br/>
 <h3><ins>By:<br/>
 Geri McPherson and John McPherson</ins></h3>
-<h1><ins>Primitive Fire and Cordage</ins></h1><article>
+<h1 id="Fire"><ins>Primitive Fire and Cordage</ins></h1><article>
 <p>The learning of the necessary "skills" to live directly with nature, eliminating
 the need of intermediaries, isn't really all that difficult. You learn a little
 about this aspect...a bit about that one...and then another. Pretty soon you
@@ -98,7 +170,7 @@ day wearing ourselves out with
 no more information than what
 you've just read—and eventually
 made fire.</p>
-<h3><ins>Parts of a Bow </h3><ins>
+<h3><ins id="Bow">Parts of a Bow </h3><ins>
 <p>Now I'll go into more detail about all the parts—the whats and the
 whys, how to gather the parts, and how to fashion them under primitive
 conditions. The special touch you'll have to develop yourself through
@@ -117,7 +189,7 @@ that length the bow isn't too cumbersome and will allow for a good, full
 sweep of the entire length. This is critically important, as every time the bow
 stops to change directions, everything cools off a tiny bit, thus impeding
 your efforts.</p>
-<p>DRILL—</p><p>We now need to be a bit more particular. A softwood is
+<p id="Drill">DRILL—</p><p>We now need to be a bit more particular. A softwood is
 necessary. Also, dead and dry (I'll mention damp wood later). Literally
 dozens of woods will work for a drill. Cottonwood, aspen, and yucca are my
 favorites, not only because they work well but also because they're abundant
@@ -148,7 +220,7 @@ be straightened with your knife.</p>
 cottonwood fireboard). The right side is more pointed for the bearing block. The
 slight tit on the left helps it to stay where it belongs in the fireboard till the hole's
 enlarged.</p>
-<p>FIREBOARD—</p><p>The fireboard can, but need not, be the same material
+<p id="Fireboard">FIREBOARD—</p><p>The fireboard can, but need not, be the same material
 as the drill. Usually, it will be. Again, it must be a softwood. Check its
 condition, which should be the same as for the drill. The size of the board is
 variable. It need only be larger in width than the diameter of the drill. I like
@@ -178,7 +250,7 @@ Roll these around in your hands till it's fine as a cotton ball. You won't need
 much; a small handful will be plenty. Form a hole in it like a bird's nest.
 Place this on a piece of bark or cardboard (so that when it bursts into flame
 you won't barbecue your hand).</p>
-<h3><ins>Using Your Bow Drill</ins></h3>
+<h3 id="startafire"><ins>Using Your Bow Drill</ins></h3>
 <p>With the information contained thus far, you're ready to "make fire." We'll
 run you through it once now. The information presented below is certainly
 useful (or I wouldn't have gone to the trouble to write it), but it deals mostly
