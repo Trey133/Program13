@@ -15,23 +15,18 @@
       h2.cjk {
           font-family: "AR PL UKai CN";
       }
-
       h2.ctl {
           font-family: "Lohit Devanagari";
       }
-
       h3.cjk {
           font-family: "AR PL UKai CN";
       }
-
       h3.ctl {
           font-family: "Lohit Devanagari";
       }
-
       h4.cjk {
           font-family: "AR PL UKai CN";
       }
-
       h4.ctl {
           font-family: "Lohit Devanagari";
       }
@@ -41,14 +36,12 @@
       function allowDrop(ev) {
           ev.preventDefault();
       }
-
       function drag(ev) {
           ev.dataTransfer.setData("text", ev.target.id);
       }
       function drop(ev) {
           ev.preventDefault();
           var data = ev.dataTransfer.getData("text");
-
           ev.target.appendChild(document.getElementById(data));
       }
   </script>
@@ -186,4 +179,3 @@ setTimeout('PopupWin.close()',7000);}
 {{ content }}
 </body>
 </html>
-
