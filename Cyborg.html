@@ -41,7 +41,20 @@ layout: default
 <br />
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for programs" title="Type in a program">
+<style>
+ table { table-layout: fixed; }
+ table th, table td { overflow: hidden; }
+</style>
 
+<table class="span12">
+  <thead>
+    <tr>
+      <th style="width: 30%">Program</th>
+      <th style="width: 20%">Name</th>
+      <th style="width: 10%">Description</th>
+    </tr>
+  </thead>
+<tbody>
 <table id="myTable" width="500">
     <tr>
         <td width="25%"><a href="AndroidBF.html">AndroidBF</a></td>
@@ -250,7 +263,7 @@ layout: default
 <td><a href=""></a></td>
 <td><a href=""></a></td>
 </tr>
-
+</tbody>
 </table>
 <script>
 function myFunction() {
