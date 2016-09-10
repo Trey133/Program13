@@ -34,17 +34,3 @@ font-size: 15;
 color: limegreen;
 text-align: center;
 }
-.table
-{
-    ...
-    width:960px;
-}
-
-.td
-{
-    ...
-    white-space:nowrap;
-}
-.tr{
-    white-space:nowrap;
-}
