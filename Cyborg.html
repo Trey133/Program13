@@ -41,25 +41,11 @@ layout: default
 <br />
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for programs" title="Type in a program">
-<style type="text/css">
-.table{
-    width:950px;
-    border: 1px solid #ccc;
-}
-.myTable td{
-    border: 1px solid #ccc;
-}
-.id, .Program, .action{
-    width:1px;
-}
-.Program{
-    white-space: nowrap;
-}
-.Name{
-    white-space: nowrap;
-}
-.Description{
-    white-space: nowrap;
+<style>
+.myTable {
+    -webkit-column-width: 250px;
+    -moz-column-width: 250px;
+    column-width: 250px;
 }
 </style>
 <table style="width: 100%" id="myTable">
