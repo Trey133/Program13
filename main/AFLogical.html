@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<br/>
+<br/>
+<hr/>
+<br/>
+<h2>Description</h2>
+<br/>
+<p>AFLogical Open Source Edition was released in December 2011 and is now hosted on GitHub (can be cloned with git ). The app provides a basic framework for extracting data from Android devices using Content Providers and then saves the data to the SD Card of the device including:</p>
+<br/>
+<br/> 
+<p>Contacts</p>
+<br/>
+<p>Call Logs</p>
+<br/>
+<p>SMS</p>
+<br/>
+<p>MMS</p>
+<br/>
+<p>MMS Parts</p>
+<br/>
+<p>Device info</p>
+<br/>
+<p>Example</p>
+<br/>
+<p>cyborg@cyborg:~$ sudo aflogical</p>
+<p>connect your device and run here 'adb devices'</p>
+<p>after successful connecting your device run here 'adb install AFLogical-OSE_1.5.2.apk'</p>
+<p>Run ‘ADB DEVICES’ after connecting device :</p>
+<br/>
+<p>root@cyborg:/pentest/forensics/af logical# adb devices</p>
+<p>List of devices attached </p>
+<p>0123456789ABCDEF	device</p>
+<p>If Device connected , Run :</p>
+<br/>
+<p>root@cyborg:/pentest/forensics/af logical# adb install AFLogical-OSE_1.5.2.apk</p>
+<p>545 KB/s (28794 bytes in 0.051s)</p>
+<p>	pkg: /data/local/tmp/AFLogical-OSE_1.5.2.apk</p>
+<p>Success</p>
+<p>This will install APK to connected Device :</p>
+<img src="images/zantia.png" width="100px" height="350px"/>
+<p>AFLogical Open Source Edition AFLogical Open Source Edition</p>
+<br/>
+<p>Open App :</p>
+<img src="images/zantib.png" width="100px" height="350px"/>
+<p>aflogical extracted AFLogical Open Source Edition</p>
+<br/>
+<p>Click on Capture :</p>
+<img src="images/zantic.png" width="100px" height="350px"/>
+<p>aflogical extract AFLogical Open Source Edition</p>
+<br/>
+<p>Pull and examine the extracted data:</p>
+<br/>
+<p>root@cyborg:/pentest/forensics/af logical# adb pull /mnt/sdcard/forensics</p>
+<p>pull: building file list...</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/Contacts Phones.csv -> ./20151118.1437/Contacts Phones.csv</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/CallLog Calls.csv -> ./20151118.1437/CallLog Calls.csv</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/SMS.csv -> ./20151118.1437/SMS.csv</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/MMSParts.csv -> ./20151118.1437/MMSParts.csv</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/MMS.csv -> ./20151118.1437/MMS.csv</p>
+<p>pull: /mnt/sdcard/forensics/20151118.1437/info.xml -> ./20151118.1437/info.xml</p>
+<p>6 files pulled. 0 files skipped.</p>
+<p>478 KB/s (308754 bytes in 0.630s)</p>
+<br/>
+<p>New Folder with has been Created :</p>
+<br/>
+<p>root@cyborg:/pentest/forensics/af logical# ls</p>
+<p>20151118.1437  AFLogical-OSE_1.5.2.apk  GPL  README.txt</p>
+<br/>
+<p>Open With Nautilus :</p>
+<br/>
+<p>root@cyborg:/pentest/forensics/af logical# nautilus</p>
+<img src="images/zantid.png" width="100px" height="350px"/></p>
+<p>aflogical file view AFLogical Open Source Edition</p>
+<p>Open Folder :</p>
+<img src="images/zantie.png" width="100px" height="350px"/>
+<br/>
+<br/>
+<br/>
+<hr/>
+<br/>
