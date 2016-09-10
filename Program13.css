@@ -34,14 +34,17 @@ font-size: 15;
 color: limegreen;
 text-align: center;
 }
-table
+.table
 {
     ...
     width:960px;
 }
 
-td
+.td
 {
     ...
+    white-space:nowrap;
+}
+.tr{
     white-space:nowrap;
 }
