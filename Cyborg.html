@@ -39,8 +39,23 @@ layout: default
 <br />
 <hr />
 <br />
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for programs" title="Type in a program">
 
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for programs" title="Type in a program">
+<style type="text/css">
+.table{
+    width:950px;
+    border: 1px solid #ccc;
+}
+.table td{
+    border: 1px solid #ccc;
+}
+.id, .Program, .action{
+    width:1px;
+}
+.Program{
+    white-space: nowrap;
+}
+</style>
 <table style="width: 100%" id="myTable">
   <tr class="header">
 <th>Program</th>
