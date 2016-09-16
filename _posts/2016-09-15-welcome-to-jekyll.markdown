@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Welcome to the Program13 blog!"
 date:   2016-09-15 23:19:57 -0500
 categories: random
