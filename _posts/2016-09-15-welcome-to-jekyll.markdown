@@ -1,25 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to the Program13 blog!"
 date:   2016-09-15 23:19:57 -0500
-categories: jekyll update
+categories: random
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+We would like to officially welcome you to our blog page! While the site is still a work in progress, 
+we decided to start sharing all the cool stuff we find on the internet in real time with our members. 
+It is our goal to bring you as much information about whatever random subject intrests us at a perticular time,
+and what better way to do that than with our very own blog page? If you have a subject you would like us to
+investigate or study furher please let us know and your idea could wind up on our site.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+We strongly encourage our members to help with the idea process and even the research if they are interested.
+The best way to learn as a community is to teach as a community, so please feel free to share your ideas or useful
+tidbits of random knowledge. If you would like to add something to our site please visit the "Contact Us" page and
+ send us a message or visit the "File Share" page and send us a file for our library. 
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Thank you for all of your help and support. We hope to hear from you soon! :)
