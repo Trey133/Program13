@@ -2,15 +2,31 @@
 layout: default
 title: Area Codes
 ---
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search For Area Codes" title="AreaCodes">
 
 <style>
  table { table-layout: fixed; }
  table th, table td { overflow: hidden; }
 </style>
-
-<table id="myTable" class="table table-bordered table-hover table-condensed">
-<tbody><tr><td>Country</td>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Area Codes</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <form>
+      <input id="filterTable-input" data-type="search" placeholder="Search For Area Codes...">
+    </form>
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
+      <thead>
+        <tr>
+          <th data-priority="6">CountryCode</th>
+          <th>AreaCode</th>
+          <th data-priority="1">Country</th>
+          <th data-priority="2">Area</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>Country</td>
 <td>Country Code</td>
 <td>Area</td>
 <td>Area Code</td>
