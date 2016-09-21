@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="Program13.css"/>
+am13.css"/>
 <link rel="stylesheet" href="StyleSheet1.css"/>
 <html>
 <head>
@@ -144,7 +144,7 @@ setTimeout('PopupWin.close()',7000);}
             <div class="dropdown-content">
                 <a href="http://program13.me/Onionsitelist.html" title="Onion List" >Onion List</a>
                 <a href="http://program13.me/onioninfo.html" title="Onion Info">Onion Info</a>
-                <a href="http://yin7gxpet5c3bhes.onion/room/main?r=vcY_j0eo7Mzco_7upd3gnA.." target="_blank">Onion Chat</a>
+
             </div>
     </ul>
     
