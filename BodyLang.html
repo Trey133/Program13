@@ -15,27 +15,79 @@ SHERLOCK HOLMES, 1892</em></h3>
 <hr/>
 <br/>
 <br/>
-<ul class="dropdown" id=".bl">
-                <a href="#a" class="dropbtn" style="color: limegreen">Navigation</a>
-                <div class="dropdown-content">
-                    <a href="#a">It's Not What You Say</a>
-                    <br/>
-                    <a href="#b">Women</a>
-<br/>
-<a href="#c">Brain Scan</a>
-                    <br/>
-                    <a href="#d">Fortune Tellers</a>
-<br/>
-<a href="#e">Smokers</a>
-                    <br/>
-       </ul>
+    <style>
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lime green;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<br/>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#a">It's Not What Your Say</a>
+  <a href="#b">Women</a>
+  <a href="#c">Brain Scan</a>
+  <a href="#d">Fortune Tellers</a>
+  <a href="#e">Smokers</a>
+  <a href="#f"></a>
+  <a href="#g"></a>
+  <a href="#h"></a>
+</div>
+
+<h2>Body Langueage Dict.</h2>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <br/>
 <br/>
 <hr/>
 <br/>
 <br/>
-<h1>Why It's Not What You Say</h1>
+<h1 id="a">Why It's Not What You Say</h1>
 <article>
 <p>
 Despite what it may be politically correct to believe, when we
@@ -70,7 +122,7 @@ telling another.
 <hr/>
 <br/>
 <br/>
-<h1>Women</h1>
+<h1 id="b">Women</h1>
 <article>
 <p>
 we say someone is 'perceptive' or 'intuitive' about
@@ -118,7 +170,7 @@ signals early
 <hr/>
 <br/>
 <br/>
-<h1>What Brain Scans Show</h1>
+<h1 id="c">What Brain Scans Show</h1>
 <article>
 <p>
 Most women have the brain organisation to out-communicate
@@ -158,7 +210,7 @@ consciously to read the signals. That's what this book is about.
 <hr/>
 <br/>
 <br/>
-<h1>Fortune Tellers</h1>
+<h1 id="d">Fortune Tellers</h1>
 <article>
 <p>
 If you've ever visited a fortune teller you probably came away
@@ -203,7 +255,7 @@ but you'll soon be able to read others as accurately as they do.
 <hr/>
 <br/>
 <br/>
-<h1>The Two Types Of Smokers</h1>
+<h1 id="e">The Two Types Of Smokers</h1>
 <article>
 <p>   There are two basic types of smokers - addicted smokers and
 social smokers.</p>
