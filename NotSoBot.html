@@ -1,325 +1,279 @@
-
-<!-- saved from url=(0022)https://mods.nyc/help/ -->
-<html style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style></head><body><iframe id="publishiframe" style="display:none;" src="./NotSoBot_files/content-script.html"></iframe>
-<style>body{background-color:#282828}.header{color:red;font-family:"Helvetica Neue",Arial,sans-serif;}</style>
-<center><h2 class="header">NotSoBot's Command List</h2></center>
-<script type="text/rocketscript" data-rocketsrc="//gistfy.mods.nyc/github/gist/2d9efaadf18b288b84be05f2af0c1fd2?lang=lua&amp;style=monokai_sublime" data-rocketoptimized="true"></script><link rel="stylesheet" href="./NotSoBot_files/gistfy.monokai_sublime.min.css"><div class="gist"><div class="gist-file">
-        <div class="gist-data">
-            <table cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td class="line-numbers"><span class="line-number">1</span><span class="line-number">2</span><span class="line-number">3</span><span class="line-number">4</span><span class="line-number">5</span><span class="line-number">6</span><span class="line-number">7</span><span class="line-number">8</span><span class="line-number">9</span><span class="line-number">10</span><span class="line-number">11</span><span class="line-number">12</span><span class="line-number">13</span><span class="line-number">14</span><span class="line-number">15</span><span class="line-number">16</span><span class="line-number">17</span><span class="line-number">18</span><span class="line-number">19</span><span class="line-number">20</span><span class="line-number">21</span><span class="line-number">22</span><span class="line-number">23</span><span class="line-number">24</span><span class="line-number">25</span><span class="line-number">26</span><span class="line-number">27</span><span class="line-number">28</span><span class="line-number">29</span><span class="line-number">30</span><span class="line-number">31</span><span class="line-number">32</span><span class="line-number">33</span><span class="line-number">34</span><span class="line-number">35</span><span class="line-number">36</span><span class="line-number">37</span><span class="line-number">38</span><span class="line-number">39</span><span class="line-number">40</span><span class="line-number">41</span><span class="line-number">42</span><span class="line-number">43</span><span class="line-number">44</span><span class="line-number">45</span><span class="line-number">46</span><span class="line-number">47</span><span class="line-number">48</span><span class="line-number">49</span><span class="line-number">50</span><span class="line-number">51</span><span class="line-number">52</span><span class="line-number">53</span><span class="line-number">54</span><span class="line-number">55</span><span class="line-number">56</span><span class="line-number">57</span><span class="line-number">58</span><span class="line-number">59</span><span class="line-number">60</span><span class="line-number">61</span><span class="line-number">62</span><span class="line-number">63</span><span class="line-number">64</span><span class="line-number">65</span><span class="line-number">66</span><span class="line-number">67</span><span class="line-number">68</span><span class="line-number">69</span><span class="line-number">70</span><span class="line-number">71</span><span class="line-number">72</span><span class="line-number">73</span><span class="line-number">74</span><span class="line-number">75</span><span class="line-number">76</span><span class="line-number">77</span><span class="line-number">78</span><span class="line-number">79</span><span class="line-number">80</span><span class="line-number">81</span><span class="line-number">82</span><span class="line-number">83</span><span class="line-number">84</span><span class="line-number">85</span><span class="line-number">86</span><span class="line-number">87</span><span class="line-number">88</span><span class="line-number">89</span><span class="line-number">90</span><span class="line-number">91</span><span class="line-number">92</span><span class="line-number">93</span><span class="line-number">94</span><span class="line-number">95</span><span class="line-number">96</span><span class="line-number">97</span><span class="line-number">98</span><span class="line-number">99</span><span class="line-number">100</span><span class="line-number">101</span><span class="line-number">102</span><span class="line-number">103</span><span class="line-number">104</span><span class="line-number">105</span><span class="line-number">106</span><span class="line-number">107</span><span class="line-number">108</span><span class="line-number">109</span><span class="line-number">110</span><span class="line-number">111</span><span class="line-number">112</span><span class="line-number">113</span><span class="line-number">114</span><span class="line-number">115</span><span class="line-number">116</span><span class="line-number">117</span><span class="line-number">118</span><span class="line-number">119</span><span class="line-number">120</span><span class="line-number">121</span><span class="line-number">122</span><span class="line-number">123</span><span class="line-number">124</span><span class="line-number">125</span><span class="line-number">126</span><span class="line-number">127</span><span class="line-number">128</span><span class="line-number">129</span><span class="line-number">130</span><span class="line-number">131</span><span class="line-number">132</span><span class="line-number">133</span><span class="line-number">134</span><span class="line-number">135</span><span class="line-number">136</span><span class="line-number">137</span><span class="line-number">138</span><span class="line-number">139</span><span class="line-number">140</span><span class="line-number">141</span><span class="line-number">142</span><span class="line-number">143</span><span class="line-number">144</span><span class="line-number">145</span><span class="line-number">146</span><span class="line-number">147</span><span class="line-number">148</span><span class="line-number">149</span><span class="line-number">150</span><span class="line-number">151</span><span class="line-number">152</span><span class="line-number">153</span><span class="line-number">154</span><span class="line-number">155</span><span class="line-number">156</span><span class="line-number">157</span><span class="line-number">158</span><span class="line-number">159</span><span class="line-number">160</span><span class="line-number">161</span><span class="line-number">162</span><span class="line-number">163</span><span class="line-number">164</span><span class="line-number">165</span><span class="line-number">166</span><span class="line-number">167</span><span class="line-number">168</span><span class="line-number">169</span><span class="line-number">170</span><span class="line-number">171</span><span class="line-number">172</span><span class="line-number">173</span><span class="line-number">174</span><span class="line-number">175</span><span class="line-number">176</span><span class="line-number">177</span><span class="line-number">178</span><span class="line-number">179</span><span class="line-number">180</span><span class="line-number">181</span><span class="line-number">182</span><span class="line-number">183</span><span class="line-number">184</span><span class="line-number">185</span><span class="line-number">186</span><span class="line-number">187</span><span class="line-number">188</span><span class="line-number">189</span><span class="line-number">190</span><span class="line-number">191</span><span class="line-number">192</span><span class="line-number">193</span><span class="line-number">194</span><span class="line-number">195</span><span class="line-number">196</span><span class="line-number">197</span><span class="line-number">198</span><span class="line-number">199</span><span class="line-number">200</span><span class="line-number">201</span><span class="line-number">202</span><span class="line-number">203</span><span class="line-number">204</span><span class="line-number">205</span><span class="line-number">206</span><span class="line-number">207</span><span class="line-number">208</span><span class="line-number">209</span><span class="line-number">210</span><span class="line-number">211</span><span class="line-number">212</span><span class="line-number">213</span><span class="line-number">214</span><span class="line-number">215</span><span class="line-number">216</span><span class="line-number">217</span><span class="line-number">218</span><span class="line-number">219</span><span class="line-number">220</span><span class="line-number">221</span><span class="line-number">222</span><span class="line-number">223</span><span class="line-number">224</span><span class="line-number">225</span><span class="line-number">226</span><span class="line-number">227</span><span class="line-number">228</span><span class="line-number">229</span><span class="line-number">230</span><span class="line-number">231</span><span class="line-number">232</span><span class="line-number">233</span><span class="line-number">234</span><span class="line-number">235</span><span class="line-number">236</span><span class="line-number">237</span><span class="line-number">238</span><span class="line-number">239</span><span class="line-number">240</span><span class="line-number">241</span><span class="line-number">242</span><span class="line-number">243</span><span class="line-number">244</span><span class="line-number">245</span><span class="line-number">246</span><span class="line-number">247</span><span class="line-number">248</span><span class="line-number">249</span><span class="line-number">250</span><span class="line-number">251</span><span class="line-number">252</span><span class="line-number">253</span><span class="line-number">254</span><span class="line-number">255</span><span class="line-number">256</span><span class="line-number">257</span><span class="line-number">258</span><span class="line-number">259</span><span class="line-number">260</span><span class="line-number">261</span><span class="line-number">262</span><span class="line-number">263</span><span class="line-number">264</span><span class="line-number">265</span><span class="line-number">266</span><span class="line-number">267</span><span class="line-number">268</span><span class="line-number">269</span><span class="line-number">270</span><span class="line-number">271</span><span class="line-number">272</span><span class="line-number">273</span><span class="line-number">274</span><span class="line-number">275</span></td>
-                        <td class="line-data">
-                            <pre class="line-pre">Complete command list of NotSoBot &lt;<span class="hljs-number">170903342199865344</span>&gt;:
-Owner: NotSoSuper &lt;<span class="hljs-number">130070621034905600</span>&gt;
+---
+layout: default
+title: NotSoBot Commands
+---
+Complete command list of NotSoBot <170903342199865344>:
+Owner: NotSoSuper <130070621034905600>
 Prefix: .
 * = Not Required
 ^ = Bot Owner Only
 ^^ = Server Admin Only
-<span class="hljs-string">"/'s"</span> <span class="hljs-keyword">in</span> commands show aliases <span class="hljs-keyword">for</span> the command (Ex: <span class="hljs-string">".reverse/r &lt;text&gt;"</span> Command can be run with .reverse <span class="hljs-keyword">or</span> .r)
-&lt;max_messages&gt; = The number of messages to search through
-<span class="hljs-comment">-------</span>
-Join <span class="hljs-string">"NotSoSuper's Dev"</span> <span class="hljs-keyword">for</span> any questions <span class="hljs-keyword">or</span> help with the bot <span class="hljs-keyword">and</span> free emotes!
+"/'s" in commands show aliases for the command (Ex: ".reverse/r <text>" Command can be run with .reverse or .r)
+<max_messages> = The number of messages to search through
+-------
+Join "NotSoSuper's Dev" for any questions or help with the bot and free emotes!
 https://discord.gg/QQENx4f
-<span class="hljs-comment">-------</span>
+-------
 Tags:
-    Info: All tags are global unless someone attempts to make a tag that is global <span class="hljs-keyword">in</span> a specific server,
-          <span class="hljs-keyword">then</span> the global tag remains untouched but the new tag created <span class="hljs-keyword">in</span> the server is specific <span class="hljs-keyword">for</span> that server only.
-    Problems/Reports: Contact @NotSoSuper#<span class="hljs-number">8800</span>
+    Info: All tags are global unless someone attempts to make a tag that is global in a specific server,
+          then the global tag remains untouched but the new tag created in the server is specific for that server only.
+    Problems/Reports: Contact @NotSoSuper#8800
     Scripting: .tag raw script , Lua Scripting
-    <span class="hljs-number">1.</span> View A Tag           : .tag &lt;tag_name&gt; &lt;tag_args&gt;*
-    <span class="hljs-number">2.</span> Create A Tag         : .tag create &lt;tag_name&gt; &lt;tag_content&gt;
-    <span class="hljs-number">3.</span> Remove A Tag         : .tag remove &lt;tag_name&gt;
-    <span class="hljs-number">4.</span> Edit A Tag           : .tag edit &lt;tag_name&gt; &lt;edited_tag_content&gt;
-    <span class="hljs-number">5.</span> List All Your Tags   : .tag list &lt;@discord_user&gt;*
+    1. View A Tag           : .tag <tag_name> <tag_args>*
+    2. Create A Tag         : .tag create <tag_name> <tag_content>
+    3. Remove A Tag         : .tag remove <tag_name>
+    4. Edit A Tag           : .tag edit <tag_name> <edited_tag_content>
+    5. List All Your Tags   : .tag list <@discord_user>*
        Or a Users
-     <span class="hljs-number">1.</span> List All Tags       : .tag list all
-    <span class="hljs-number">6.</span> View Tag Owner       : .tag owner &lt;tag_name&gt;
-    <span class="hljs-number">7.</span> View a Tag           : .tag view &lt;tag_name&gt;
+     1. List All Tags       : .tag list all
+    6. View Tag Owner       : .tag owner <tag_name>
+    7. View a Tag           : .tag view <tag_name>
        With Format
-    <span class="hljs-number">8.</span> View a Tag Raw       : .tag raw &lt;tag_name&gt;
-    <span class="hljs-number">9.</span> View a Tag Raw       : .tag raw2 &lt;tag_name&gt;
+    8. View a Tag Raw       : .tag raw <tag_name>
+    9. View a Tag Raw       : .tag raw2 <tag_name>
        In a Codeblock
-    <span class="hljs-number">10.</span> Random Tag          : .tag random
-    <span class="hljs-number">11.</span> Search Tags         : .tag search &lt;tag_name&gt;
-      <span class="hljs-number">1.</span> Search <span class="hljs-keyword">for</span> a Tag   : .tag search content &lt;text&gt;
+    10. Random Tag          : .tag random
+    11. Search Tags         : .tag search <tag_name>
+      1. Search for a Tag   : .tag search content <text>
          Using Tag Content
-    <span class="hljs-number">12.</span> (^)Force Remove     : .tag forceremove &lt;tag_name&gt;
+    12. (^)Force Remove     : .tag forceremove <tag_name>
         A Tag
-    <span class="hljs-number">13.</span> Gift a Tag/Transfer : .tag gift &lt;tag_name&gt; &lt;@discord_user&gt;
+    13. Gift a Tag/Transfer : .tag gift <tag_name> <@discord_user>
         Ownership
 Fun:
-    <span class="hljs-number">1.</span> Random <span class="hljs-number">4</span>chan post    : .chan &lt;board&gt;*
-      <span class="hljs-number">1.</span> Get Info of a      : .chan parse &lt;thread_url/post_url&gt;
-         Thread <span class="hljs-keyword">or</span> Post
-    <span class="hljs-number">2.</span> Kill Your Self       : .kys &lt;name <span class="hljs-keyword">or</span> @discord_user&gt;
-    <span class="hljs-number">3.</span> AI                   : .ai
-    <span class="hljs-number">4.</span> Replies to Keywords  : .replies
-    <span class="hljs-number">5.</span> Google Search        : .google &lt;text&gt;
-    <span class="hljs-number">6.</span> Google Image         : .image &lt;text&gt;
-    <span class="hljs-number">7.</span> Suicide              : .suicide &lt;name&gt;
-    <span class="hljs-number">8.</span> Bad Meme (Bad API)   : .badmeme
-    <span class="hljs-number">9.</span> Apply Magik to Image : .magik &lt;image_url/@discord_user&gt; &lt;image_url/@discord_user&gt;*
-    <span class="hljs-number">10.</span> Apply Magik to GIF  : .gmagik &lt;gif_url&gt; &lt;frame_rate&gt;*
-    <span class="hljs-number">11.</span> Caption an Image    : .caption &lt;image_url&gt; &lt;text&gt; &lt;color&gt;* &lt;size&gt;*
-    <span class="hljs-number">12.</span> Who Will You        : .heil &lt;hitler/hydra/megatron&gt;
+    1. Random 4chan post    : .chan <board>*
+      1. Get Info of a      : .chan parse <thread_url/post_url>
+         Thread or Post
+    2. Kill Your Self       : .kys <name or @discord_user>
+    3. AI                   : .ai
+    4. Replies to Keywords  : .replies
+    5. Google Search        : .google <text>
+    6. Google Image         : .image <text>
+    7. Suicide              : .suicide <name>
+    8. Bad Meme (Bad API)   : .badmeme
+    9. Apply Magik to Image : .magik <image_url/@discord_user> <image_url/@discord_user>*
+    10. Apply Magik to GIF  : .gmagik <gif_url> <frame_rate>*
+    11. Caption an Image    : .caption <image_url> <text> <color>* <size>*
+    12. Who Will You        : .heil <hitler/hydra/megatron>
         Worship?
-    <span class="hljs-number">13.</span> Aesthetics          : .aesthetics &lt;text&gt;
-    <span class="hljs-number">14.</span> ASCII               : .ascii &lt;text&gt;
-    <span class="hljs-number">15.</span> Image to ASCII      : .iascii &lt;image_url&gt;
-    <span class="hljs-number">16.</span> GIF to ASCII        : .gascii &lt;image_url&gt; &lt;liquid_rescale&gt;*
+    13. Aesthetics          : .aesthetics <text>
+    14. ASCII               : .ascii <text>
+    15. Image to ASCII      : .iascii <image_url>
+    16. GIF to ASCII        : .gascii <image_url> <liquid_rescale>*
                                                     mess it up
-    <span class="hljs-number">17.</span> RIP Generator       : .rip &lt;text&gt; &lt;text2&gt;*
-    <span class="hljs-number">18.</span> Urban Dictionary    : .urban &lt;word&gt;
-    <span class="hljs-number">19.</span> Triggered Generator : .triggered &lt;@discord_user&gt;
-    <span class="hljs-number">20.</span> Resize Image <span class="hljs-keyword">and</span>    : .resize &lt;<span class="hljs-number">1</span><span class="hljs-number">-8</span>/size&gt; &lt;image_url&gt;
+    17. RIP Generator       : .rip <text> <text2>*
+    18. Urban Dictionary    : .urban <word>
+    19. Triggered Generator : .triggered <@discord_user>
+    20. Resize Image and    : .resize <1-8/size> <image_url>
         Waifu2x
-    <span class="hljs-number">21.</span> Meme Commands
-      <span class="hljs-number">1.</span> Meme Template      : .meme &lt;template&gt; &lt;top_text&gt; &lt;bottom_text&gt;
-      <span class="hljs-number">2.</span> Meme Templates     : .meme templates
-      <span class="hljs-number">3.</span> User Avatar        : .meme &lt;@discord_user&gt; &lt;top_text&gt; &lt;bottom_text&gt;
-      <span class="hljs-number">4.</span> Custom Meme        : .meme &lt;image_url&gt; &lt;top_text&gt; &lt;bottom_text&gt;
-    <span class="hljs-number">22.</span> Reverse Text        : .reverse/r &lt;text&gt;
-    <span class="hljs-number">23.</span> Identify Image/Gif  : .i &lt;url&gt;
-    <span class="hljs-number">24.</span> Merge Two Users <span class="hljs-keyword">or</span>  : .merge &lt;image_url/@discord_user&gt; &lt;image_url/@discord_user&gt;
+    21. Meme Commands
+      1. Meme Template      : .meme <template> <top_text> <bottom_text>
+      2. Meme Templates     : .meme templates
+      3. User Avatar        : .meme <@discord_user> <top_text> <bottom_text>
+      4. Custom Meme        : .meme <image_url> <top_text> <bottom_text>
+    22. Reverse Text        : .reverse/r <text>
+    23. Identify Image/Gif  : .i <url>
+    24. Merge Two Users or  : .merge <image_url/@discord_user> <image_url/@discord_user>
         Images
-    <span class="hljs-number">25.</span> Turn Text Into      : .emojify/em &lt;text&gt;
+    25. Turn Text Into      : .emojify/em <text>
         Emojis
-    <span class="hljs-number">26.</span> Tone of Text        : .tone/toe &lt;text&gt;
-    <span class="hljs-number">27.</span> Huge Discord Emoji/ : .e/emoji &lt;:emoji(s):&gt; (<span class="hljs-keyword">if</span> &gt; <span class="hljs-number">1</span>, emojis merge)
+    26. Tone of Text        : .tone/toe <text>
+    27. Huge Discord Emoji/ : .e/emoji <:emoji(s):> (if > 1, emojis merge)
         Twitch/Frankerz
-    <span class="hljs-number">28.</span> Steam Emoji         : .se/steamemoji &lt;:steam_emoji:&gt;
-    <span class="hljs-number">29.</span> Add eyes to a face  : .eyes &lt;image_url/@discord_user&gt;* &lt;eye_type&gt;* &lt;resize_amount&gt;*
-                                    (<span class="hljs-keyword">or</span> attachment within command message)
-      <span class="hljs-number">1.</span> List all eye types : .eyes list
-    <span class="hljs-number">30.</span> Word Cloud          : .wc &lt;max_messages&gt;*
-      <span class="hljs-number">1.</span> Custom Image Mask  : .wc custom &lt;image_url&gt; &lt;max_messages&gt;*
-    <span class="hljs-number">31.</span> Text <span class="hljs-number">2</span> Speach       : .tts &lt;text&gt;
-      <span class="hljs-number">1.</span> Custom Voice       : .tts custom &lt;voice&gt; &lt;text&gt;
-      <span class="hljs-number">2.</span> List Voices        : .tts list
-    <span class="hljs-number">32.</span> Watermark           : .watermark &lt;image_url&gt; &lt;watermark_image_url&gt;*
-    <span class="hljs-number">33.</span> Cow Say             : .cowsay &lt;text&gt;
-      <span class="hljs-number">1.</span> Mech Say           : .mechsay &lt;text&gt;
-      <span class="hljs-number">2.</span> Dragon Say         : .dragonsay &lt;text&gt;
-      <span class="hljs-number">3.</span> Dragon&amp;Cow Say     : .dragoncowsay &lt;text&gt;
-      <span class="hljs-number">4.</span> Pony Say           : .ponysay &lt;text&gt;
-      <span class="hljs-number">5.</span> Dino Say           : .dinosay &lt;text&gt;
-      <span class="hljs-number">6.</span> Sheep Say          : .sheepsay &lt;text&gt;
-    <span class="hljs-number">34.</span> Giphy Gif           : .gif &lt;text/query&gt;*
-    <span class="hljs-number">35.</span> Imgur Image/Gallery : .imgur &lt;text/query&gt;*
-    <span class="hljs-number">36.</span> Glitch an Image     : .glitch &lt;image_url&gt; &lt;amount&gt;* &lt;seed&gt;* &lt;iterations&gt;*
-    <span class="hljs-number">37.</span> Pixelsort an Image  : .sort &lt;image_url&gt; &lt;interval_function (random, threshold, edges, waves, none)&gt;* &lt;pixel_angle&gt;*
+    28. Steam Emoji         : .se/steamemoji <:steam_emoji:>
+    29. Add eyes to a face  : .eyes <image_url/@discord_user>* <eye_type>* <resize_amount>*
+                                    (or attachment within command message)
+      1. List all eye types : .eyes list
+    30. Word Cloud          : .wc <max_messages>*
+      1. Custom Image Mask  : .wc custom <image_url> <max_messages>*
+    31. Text 2 Speach       : .tts <text>
+      1. Custom Voice       : .tts custom <voice> <text>
+      2. List Voices        : .tts list
+    32. Watermark           : .watermark <image_url> <watermark_image_url>*
+    33. Cow Say             : .cowsay <text>
+      1. Mech Say           : .mechsay <text>
+      2. Dragon Say         : .dragonsay <text>
+      3. Dragon&Cow Say     : .dragoncowsay <text>
+      4. Pony Say           : .ponysay <text>
+      5. Dino Say           : .dinosay <text>
+      6. Sheep Say          : .sheepsay <text>
+    34. Giphy Gif           : .gif <text/query>*
+    35. Imgur Image/Gallery : .imgur <text/query>*
+    36. Glitch an Image     : .glitch <image_url> <amount>* <seed>* <iterations>*
+    37. Pixelsort an Image  : .sort <image_url> <interval_function (random, threshold, edges, waves, none)>* <pixel_angle>*
 
 NSFW (Not Safe For Work):
-    **(Requires the channel name to be nsfw) <span class="hljs-keyword">or</span> (the channel topic to include [nsfw] <span class="hljs-keyword">in</span> it to use commands)!**
-    <span class="hljs-number">1.</span> E621                 : .e621 &lt;search/tags&gt;
-    <span class="hljs-number">2.</span> Rule34               : .rule34 &lt;search/tags&gt;
-    <span class="hljs-number">3.</span> Yandera              : .yande &lt;search/tags&gt;
-    <span class="hljs-number">4.</span> Xbooru               : .xbooru &lt;search/tags&gt;
-    <span class="hljs-number">5.</span> Gelbooru             : .gelbooru &lt;search/tags&gt;
-    <span class="hljs-number">6.</span> Pornhub              : .pornhub &lt;search&gt;
-    <span class="hljs-number">7.</span> Porn (Random Site)   : .porn &lt;search&gt;
-    <span class="hljs-number">8.</span> Ban a tag/search     : .bantag &lt;tags&gt;
-      <span class="hljs-number">1.</span> List all banned    : .bantag list
-      <span class="hljs-number">2.</span> Remove tag from    : .bantag remove &lt;tags&gt;
+    **(Requires the channel name to be nsfw) or (the channel topic to include [nsfw] in it to use commands)!**
+    1. E621                 : .e621 <search/tags>
+    2. Rule34               : .rule34 <search/tags>
+    3. Yandera              : .yande <search/tags>
+    4. Xbooru               : .xbooru <search/tags>
+    5. Gelbooru             : .gelbooru <search/tags>
+    6. Pornhub              : .pornhub <search>
+    7. Porn (Random Site)   : .porn <search>
+    8. Ban a tag/search     : .bantag <tags>
+      1. List all banned    : .bantag list
+      2. Remove tag from    : .bantag remove <tags>
          Ban
-        <span class="hljs-number">1.</span> Remove all       : .bantag remove all
+        1. Remove all       : .bantag remove all
            Banned tags
 
 Utility/Information:
-    <span class="hljs-number">1.</span> Invite OAUTH2 Link   : .invite
-    <span class="hljs-number">2.</span> (^)Update Bot        : .update
-    <span class="hljs-number">3.</span> (^)Logout of Discord : .die
-    <span class="hljs-number">4.</span> Changes Status/Game  : .status &lt;status&gt;
-    <span class="hljs-number">5.</span> (^)Say Text          : .say &lt;text&gt;
-    <span class="hljs-number">6.</span> Server Info          : .server
-    <span class="hljs-number">7</span>: Eval Node.JS         : .evaljs &lt;code&gt;
-    <span class="hljs-number">8.</span> (^)Eval Python Code  : .<span class="hljs-built_in">debug</span> &lt;code&gt;
-    <span class="hljs-number">9.</span> (^)Loop              : .loop &lt;amount&gt; &lt;commmand&gt;
-    <span class="hljs-number">10.</span> Ping                : .ping
-    <span class="hljs-number">11.</span> Set Your Color      : .color &lt;color&gt;
-    <span class="hljs-number">12.</span> Remove Your Color   : .uncolor
-    <span class="hljs-number">13.</span> Colors Available    : .colors
-    <span class="hljs-number">14.</span> (^^)Add Color       : .addcolor &lt;hex/name/etc&gt;
-    <span class="hljs-number">15.</span> (^^)Add Colors      : .addcolors
-    <span class="hljs-number">16.</span> Users Avatar Link   : .avatar &lt;@discord_user&gt;
-    <span class="hljs-number">17.</span> Time/Date           : .time
-    <span class="hljs-number">18.</span> Bots Uptime         : .uptime
-    <span class="hljs-number">19.</span> Users Information   : .info &lt;@discord_user&gt;
-    <span class="hljs-number">20.</span> Channel Information : .cinfo
-    <span class="hljs-number">21.</span> Mentions <span class="hljs-keyword">in</span> Channel : .mentions &lt;max_messages&gt;*
-    <span class="hljs-number">22.</span> Search Keyword In   : .search &lt;max_messages&gt; &lt;keyword/text&gt;
+    1. Invite OAUTH2 Link   : .invite
+    2. (^)Update Bot        : .update
+    3. (^)Logout of Discord : .die
+    4. Changes Status/Game  : .status <status>
+    5. (^)Say Text          : .say <text>
+    6. Server Info          : .server
+    7: Eval Node.JS         : .evaljs <code>
+    8. (^)Eval Python Code  : .debug <code>
+    9. (^)Loop              : .loop <amount> <commmand>
+    10. Ping                : .ping
+    11. Set Your Color      : .color <color>
+    12. Remove Your Color   : .uncolor
+    13. Colors Available    : .colors
+    14. (^^)Add Color       : .addcolor <hex/name/etc>
+    15. (^^)Add Colors      : .addcolors
+    16. Users Avatar Link   : .avatar <@discord_user>
+    17. Time/Date           : .time
+    18. Bots Uptime         : .uptime
+    19. Users Information   : .info <@discord_user>
+    20. Channel Information : .cinfo
+    21. Mentions in Channel : .mentions <max_messages>*
+    22. Search Keyword In   : .search <max_messages> <keyword/text>
         Channels Messages
-    <span class="hljs-number">23.</span> Upload A Gist       : .gist &lt;text&gt;
-    <span class="hljs-number">24.</span> (^)Set Bot Avatar   : .setavatar &lt;image_url&gt;
-    <span class="hljs-number">25.</span> (^)Set Bot Name     : .setname &lt;text&gt;
-    <span class="hljs-number">26.</span> Steam User Info     : .steam &lt;steamid/steam64/steamurl/customurl&gt;
-    <span class="hljs-number">27.</span> Find <span class="hljs-keyword">and</span> Replace    : .s /&lt;text to find&gt;/&lt;text to replace it with&gt;/ OR (start message with) s/&lt;text to find&gt;/&lt;text to replace it with&gt;/
+    23. Upload A Gist       : .gist <text>
+    24. (^)Set Bot Avatar   : .setavatar <image_url>
+    25. (^)Set Bot Name     : .setname <text>
+    26. Steam User Info     : .steam <steamid/steam64/steamurl/customurl>
+    27. Find and Replace    : .s /<text to find>/<text to replace it with>/ OR (start message with) s/<text to find>/<text to replace it with>/
         Text (Sed)
-    <span class="hljs-number">28.</span> Screenshot a URL    : .screenshot &lt;url&gt;
-    <span class="hljs-number">29.</span> Statistics          : .stats
-    <span class="hljs-number">30.</span> GitHub Code Search  : .botc &lt;text/code&gt;
-    <span class="hljs-number">31.</span> Ping IP/Site        : .iping &lt;ip/url&gt;
-    <span class="hljs-number">32.</span> Leave Feedback <span class="hljs-keyword">or</span>   : .complain &lt;text&gt;
+    28. Screenshot a URL    : .screenshot <url>
+    29. Statistics          : .stats
+    30. GitHub Code Search  : .botc <text/code>
+    31. Ping IP/Site        : .iping <ip/url>
+    32. Leave Feedback or   : .complain <text>
         Complaints
-    <span class="hljs-number">33.</span> Name/Nickname Logs  : .names &lt;@discord_user&gt;*
-      <span class="hljs-number">1.</span> Server Name Logs   : .snames
-    <span class="hljs-number">34.</span> Online Staff        : .admins/mods
-    <span class="hljs-number">35.</span> Reminder            : .remind &lt;time&gt; (<span class="hljs-number">1</span>d1h = <span class="hljs-number">1</span> day <span class="hljs-number">1</span> hour) &lt;text&gt;*
-      <span class="hljs-number">1.</span> List Reminders     : .remind list
-      <span class="hljs-number">2.</span> Remove Reminder    : .remind remove &lt;id&gt;
-        <span class="hljs-number">1.</span> Remove All       : .remind remove all
-    <span class="hljs-number">36.</span> WolframAlpha        : .wolframalpha/wa &lt;text/query&gt;
-    <span class="hljs-number">37.</span> Hash MD5            : .hash &lt;text&gt;
-      <span class="hljs-number">1.</span> Hash SHA1          : .hash sha1 &lt;text&gt;
-      <span class="hljs-number">2.</span> Hash SHA256        : .hash sha256 &lt;text&gt;
-      <span class="hljs-number">3.</span> Hash SHA512        : .hash sha512 &lt;text&gt;
+    33. Name/Nickname Logs  : .names <@discord_user>*
+      1. Server Name Logs   : .snames
+    34. Online Staff        : .admins/mods
+    35. Reminder            : .remind <time> (1d1h = 1 day 1 hour) <text>*
+      1. List Reminders     : .remind list
+      2. Remove Reminder    : .remind remove <id>
+        1. Remove All       : .remind remove all
+    36. WolframAlpha        : .wolframalpha/wa <text/query>
+    37. Hash MD5            : .hash <text>
+      1. Hash SHA1          : .hash sha1 <text>
+      2. Hash SHA256        : .hash sha256 <text>
+      3. Hash SHA512        : .hash sha512 <text>
 
 Pager/Message Tracking:
-<span class="hljs-number">1.</span> Pager
-    <span class="hljs-number">1.</span> Pager Base Command   : .pg
-    <span class="hljs-number">2.</span> Pager Add            : .pg add &lt;text&gt;
-    <span class="hljs-number">3.</span> Pager Remove         : .pg remove &lt;text&gt;
-    <span class="hljs-number">4.</span> Pager Set Method     : .pg method &lt;pm/ping/both&gt;
+1. Pager
+    1. Pager Base Command   : .pg
+    2. Pager Add            : .pg add <text>
+    3. Pager Remove         : .pg remove <text>
+    4. Pager Set Method     : .pg method <pm/ping/both>
        To Notify
-    <span class="hljs-number">5.</span> Pager List           : .pg list
-    <span class="hljs-number">6.</span> Private Message      : .pmentions
+    5. Pager List           : .pg list
+    6. Private Message      : .pmentions
        Mentions
-<span class="hljs-number">2.</span> Message Tracking (^^)
-    <span class="hljs-number">1.</span> Track a message      : .track &lt;text&gt;
-       <span class="hljs-keyword">and</span> log to the
+2. Message Tracking (^^)
+    1. Track a message      : .track <text>
+       and log to the
        Current channel
-    <span class="hljs-number">2.</span> Remove a tracked     : .track remove &lt;text&gt;
+    2. Remove a tracked     : .track remove <text>
        Message
-    <span class="hljs-number">3.</span> Remove all tracked   : .track remove all
+    3. Remove all tracked   : .track remove all
        Messages
-    <span class="hljs-number">4.</span> Change tracked
-       Message channel      : .track channel &lt;#discord_channel&gt;*
-    <span class="hljs-number">5.</span> List tracked         : .track list
+    4. Change tracked
+       Message channel      : .track channel <#discord_channel>*
+    5. List tracked         : .track list
        Messages
 
 Administration/Moderation (Manage_Messages Perm)(^^):
-    <span class="hljs-number">1.</span> (^^)Server Logs      : .slogs
-    <span class="hljs-number">2.</span> Remove Bot Messages  : .clean &lt;max_messages&gt;
-    <span class="hljs-number">3.</span> Remove Messages      : .prune &lt;max_messages&gt;
-    <span class="hljs-number">4.</span> Remove User Messages : .prune user &lt;max_messages&gt; &lt;@discord_users&gt;
-    <span class="hljs-number">5.</span> Mute/Turn off a User : .off &lt;@discord_user&gt;
-    	<span class="hljs-number">1.</span> List users <span class="hljs-string">"off"</span>   : .off list
-    <span class="hljs-number">6.</span> Un-mute/Turn on a    : .on &lt;@discord_user&gt;
+    1. (^^)Server Logs      : .slogs
+    2. Remove Bot Messages  : .clean <max_messages>
+    3. Remove Messages      : .prune <max_messages>
+    4. Remove User Messages : .prune user <max_messages> <@discord_users>
+    5. Mute/Turn off a User : .off <@discord_user>
+    	1. List users "off"   : .off list
+    6. Un-mute/Turn on a    : .on <@discord_user>
        User
-    	<span class="hljs-number">1.</span> Turn on all users 	: .on all
-    <span class="hljs-number">7.</span> Message Logs <span class="hljs-keyword">for</span>     : .logs &lt;max_messages&gt;* &lt;#discord_channel&gt;*
+    	1. Turn on all users 	: .on all
+    7. Message Logs for     : .logs <max_messages>* <#discord_channel>*
         The Channel
-    	<span class="hljs-number">1.</span> Message logs <span class="hljs-keyword">for</span>   : .logs user &lt;max_messages&gt;* &lt;#discord_channel&gt;*
+    	1. Message logs for   : .logs user <max_messages>* <#discord_channel>*
 				 x User
-    <span class="hljs-number">8.</span> (^^)Leave Server     : .leave
-    <span class="hljs-number">9.</span> (^^)Create Role      : .createrole &lt;role_name&gt;
-    <span class="hljs-number">10.</span> (^^)Delete Role     : .deleterole &lt;role_name&gt;
-    <span class="hljs-number">11.</span> (^^)Add Role        : .addrole &lt;role_name&gt; &lt;@discord_user&gt;
+    8. (^^)Leave Server     : .leave
+    9. (^^)Create Role      : .createrole <role_name>
+    10. (^^)Delete Role     : .deleterole <role_name>
+    11. (^^)Add Role        : .addrole <role_name> <@discord_user>
         To a user
-    <span class="hljs-number">12.</span> (^^)Remove Role     : .removerole &lt;role_name&gt; &lt;@discord_user&gt;
+    12. (^^)Remove Role     : .removerole <role_name> <@discord_user>
         From a user
-    <span class="hljs-number">13.</span> Nickname            : .nick &lt;nickname&gt; &lt;@discord_users&gt;
-      <span class="hljs-number">1.</span> Mass Change        : .nick mass &lt;nickname&gt;
+    13. Nickname            : .nick <nickname> <@discord_users>
+      1. Mass Change        : .nick mass <nickname>
          Everyones Nickname
-      <span class="hljs-number">1.</span> Mass Revert/Remove : .nick revert
+      1. Mass Revert/Remove : .nick revert
          Everyones Nickname
-    <span class="hljs-number">14.</span> Create Invite       : .inv
-      <span class="hljs-number">1.</span> Delete Invite      : .inv delete &lt;invite_url&gt;
-      <span class="hljs-number">2.</span> List All Invites   : .inv list
-    <span class="hljs-number">15.</span> Role Mute User      : .mute &lt;@discord_users&gt;
-      <span class="hljs-number">1.</span> Unmute             : .unmute &lt;@discord_users&gt;
-    <span class="hljs-number">16.</span> Pin a message       : .pin &lt;max_messages&gt; &lt;message_id/message_content&gt; (ID of the Message <span class="hljs-keyword">or</span> Text <span class="hljs-keyword">in</span> the content of the message)
-      <span class="hljs-number">1.</span> After a Specific   : .pin date &lt;MM/DD/YYYY&gt;
+    14. Create Invite       : .inv
+      1. Delete Invite      : .inv delete <invite_url>
+      2. List All Invites   : .inv list
+    15. Role Mute User      : .mute <@discord_users>
+      1. Unmute             : .unmute <@discord_users>
+    16. Pin a message       : .pin <max_messages> <message_id/message_content> (ID of the Message or Text in the content of the message)
+      1. After a Specific   : .pin date <MM/DD/YYYY>
          Date
-      <span class="hljs-number">2.</span> Before a Specific  : .pin before &lt;MM/DD/YYYY&gt; &lt;max_messages&gt; &lt;message_content&gt;
+      2. Before a Specific  : .pin before <MM/DD/YYYY> <max_messages> <message_content>
          Date
-      <span class="hljs-number">3.</span> Pin the first      : .pin first &lt;#discord_channel&gt;*
-         Message <span class="hljs-keyword">in</span> current/specified channel
-    <span class="hljs-comment">--Approve or Verify a member on server join by placing them in a temporary role which removes message (send, read_history) permissions.</span>
-    <span class="hljs-number">17.</span> Member Verification : .verification &lt;#discord_channel&gt;* &lt;@discord_user(s)&gt;* (to mention on user join)
-        <span class="hljs-keyword">and</span> Approval Toggle
-    <span class="hljs-number">18.</span> Verify a Member     : .verify &lt;approval_id <span class="hljs-keyword">or</span> @discord_user&gt;
-      <span class="hljs-number">1.</span> List members <span class="hljs-keyword">in</span>    : .verify list
+      3. Pin the first      : .pin first <#discord_channel>*
+         Message in current/specified channel
+    --Approve or Verify a member on server join by placing them in a temporary role which removes message (send, read_history) permissions.
+    17. Member Verification : .verification <#discord_channel>* <@discord_user(s)>* (to mention on user join)
+        and Approval Toggle
+    18. Verify a Member     : .verify <approval_id or @discord_user>
+      1. List members in    : .verify list
          Queue
-      <span class="hljs-number">2.</span> Check steam        : .verify check &lt;steam_url/ID/<span class="hljs-number">64</span>&gt;
+      2. Check steam        : .verify check <steam_url/ID/64>
          Account (PM ONLY)
 
 Blacklisting/Command Toggling/Prefix (^^):
-<span class="hljs-comment">--To unblacklist, run the command the same way as you did to blacklist.</span>
-<span class="hljs-number">1.</span> Blacklisting (Alias: ignore)
-    <span class="hljs-number">1.</span> Blacklist User       : .blacklist &lt;@discord_user&gt;
-    <span class="hljs-number">2.</span> Blacklist            : .blacklist channel &lt;#discord_channel&gt;*
+--To unblacklist, run the command the same way as you did to blacklist.
+1. Blacklisting (Alias: ignore)
+    1. Blacklist User       : .blacklist <@discord_user>
+    2. Blacklist            : .blacklist channel <#discord_channel>*
          Channel
-    <span class="hljs-number">3.</span> (^)Global            : .blacklist global &lt;@discord_user&gt;
+    3. (^)Global            : .blacklist global <@discord_user>
        Blacklist
-<span class="hljs-number">2.</span> Command Toggling (Alias: cmd)
-    <span class="hljs-number">1.</span> Server Wide          : .command enable/disable/toggle &lt;command_name&gt; <span class="hljs-keyword">or</span> .command &lt;command_name&gt;
+2. Command Toggling (Alias: cmd)
+    1. Server Wide          : .command enable/disable/toggle <command_name> or .command <command_name>
        Command Toggle
-    <span class="hljs-number">2.</span> User Command Toggle  : .command user &lt;command_name&gt; &lt;@discord_user&gt;
-    <span class="hljs-number">3.</span> Role Disable Command : .command role &lt;command_name&gt; &lt;discord_role&gt;
+    2. User Command Toggle  : .command user <command_name> <@discord_user>
+    3. Role Disable Command : .command role <command_name> <discord_role>
        Toggle
-    <span class="hljs-number">4.</span> Channel Disable      : .command channel &lt;command_name&gt; &lt;#discord_channel&gt;*
+    4. Channel Disable      : .command channel <command_name> <#discord_channel>*
        Command Toggle
-    <span class="hljs-number">5.</span> (^)Global Command    : .command global &lt;command_name&gt;
+    5. (^)Global Command    : .command global <command_name>
        Toggle
-    <span class="hljs-number">6.</span> Enable all Disabled  : .command all
+    6. Enable all Disabled  : .command all
        Commands
-    <span class="hljs-number">7.</span> List all Disabled    : .command list
+    7. List all Disabled    : .command list
        Commands
-    <span class="hljs-number">8.</span> Disable all Commands : .command <span class="hljs-built_in">module</span> &lt;module_name&gt;
-       <span class="hljs-keyword">in</span> a Module
-      <span class="hljs-number">1.</span> List all Modules   : .command <span class="hljs-built_in">module</span> list
-<span class="hljs-number">3.</span> Bot Server/Channel Prefix
-    <span class="hljs-number">1.</span> Bot Prefix <span class="hljs-keyword">for</span>       : .prefix &lt;text&gt;
+    8. Disable all Commands : .command module <module_name>
+       in a Module
+      1. List all Modules   : .command module list
+3. Bot Server/Channel Prefix
+    1. Bot Prefix for       : .prefix <text>
         The Whole Server
-      <span class="hljs-number">1.</span> Bot Prefix <span class="hljs-keyword">for</span>     : .prefix channel &lt;text (wrap <span class="hljs-keyword">in</span> <span class="hljs-string">""</span> <span class="hljs-keyword">if</span> more than <span class="hljs-number">1</span> word)&gt; &lt;#discord_channel&gt;*
+      1. Bot Prefix for     : .prefix channel <text (wrap in "" if more than 1 word)> <#discord_channel>*
          a Channel
-    <span class="hljs-number">2.</span> Reset Custom Bot     : .prefix reset
+    2. Reset Custom Bot     : .prefix reset
        Prefix Settings
-      <span class="hljs-number">1.</span> Reset Server       : .prefix reset server
+      1. Reset Server       : .prefix reset server
          Prefix
-      <span class="hljs-number">2.</span> Reset Channel      : .prefix reset channel &lt;#discord_channel&gt;*
+      2. Reset Channel      : .prefix reset channel <#discord_channel>*
          Prefix
-      <span class="hljs-number">3.</span> Reset All Channel  : .prefix reset channels
+      3. Reset All Channel  : .prefix reset channels
          Prefixes
-      <span class="hljs-number">4.</span> Reset All          : .prefix reset all
-         Prefix Settings</pre>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="gist-meta">
-            <div style="float: right;"><a href="https://gist.githubusercontent.com/NotSoSuper/2d9efaadf18b288b84be05f2af0c1fd2/raw/08452ff66c889e5729e28d3d74d1e50f7e8a2014/help.lua">view raw</a>
-            </div>
-            <a href="https://gist.github.com/2d9efaadf18b288b84be05f2af0c1fd2">help.lua</a> brought to you by <a href="https://www.gistfy.com/">Gistfy</a>
-        </div>
-    </div></div>
-<noscript>
-&lt;pre&gt;&lt;/pre&gt;
-</noscript>
-<center><iframe src="./NotSoBot_files/widget.html" width="250" height="350" allowtransparency="true" frameborder="0"></iframe></center>
-<font color="lime"><center>We decided it'd be best not to spam your Discord PM's with these help docs, so here we are.</center></font>
-<script type="text/javascript">
-//<![CDATA[
-try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"554426fd24d098746057bceb33166291",petok:"9822aa2445a422e4e28edc819843f0f542249575-1475184570-1800",zone:"mods.nyc",rocket:"a",apps:{}}];document.write('<script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js"><'+'\/script>');}}catch(e){};
-//]]>
-</script><script type="text/javascript" src="./NotSoBot_files/cloudflare.min.js"></script><script data-module="cloudflare/rocket" id="cfjs_block_212e12bef0" onload="CloudFlare.__cfjs_block_212e12bef0_load()" onerror="CloudFlare.__cfjs_block_212e12bef0_error()" onreadystatechange="CloudFlare.__cfjs_block_212e12bef0_readystatechange()" type="text/javascript" src="./NotSoBot_files/rocket.js"></script>
-
-<div class="notify js-notify">
-    <div class="notify__loader">
-    </div>
-    <div class="notify__icon"></div>
-    <div class="notify__body">
-      <div class="notify__body__message">
-        <span class="js-notify-message">There was an error loading this message</span>
-        <span class="notify__body__actions js-notify-action">
-          <a href="https://web.crowdfireapp.com/#/publish/timeline" target="_blank">
-            Go to Timeline
-          </a>
-        </span>
-      </div>
-      <span class="arrow arrow--small">⤴</span>
-    </div>
-  </div><span id="publishImageBtn" style="display: none; position: absolute; z-index: 8675400; width: 100px; height: 25px; background-image: url(&quot;chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/publish-image.png&quot;); background-size: 100px 25px; opacity: 0.9; cursor: pointer; border-radius: 4px;"></span><span id="selectedIcon" style="display: none; position: absolute; z-index: 8675400; width: 40px; height: 40px; background-image: url(&quot;chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/selected-icon.png&quot;); background-size: cover; cursor: pointer; border-radius: 4px;"></span></body></html>
+      4. Reset All          : .prefix reset all
+         Prefix Settings
