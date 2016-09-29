@@ -2,19 +2,19 @@
 layout: default
 title: NotSoBot Commands
 ---
-<p>Complete command list of NotSoBot <170903342199865344>:
-<p>Owner: NotSoSuper <130070621034905600>
-<p>Prefix: .
-<p>* = Not Required
-<p>^ = Bot Owner Only
-<p>^^ = Server Admin Only
-<p>"/'s" in commands show aliases for the command (Ex: ".reverse/r <text>" Command can be run with .reverse or .r)
-<p><max_messages> = The number of messages to search through
+<h2>Complete command list of NotSoBot <170903342199865344>:</h2>
+<h3>Owner: NotSoSuper <130070621034905600></h3>
+<h2>Prefix: .</h2>
+<h3>* = Not Required
+<h3>^ = Bot Owner Only
+<h3>^^ = Server Admin Only
+<h3>"/'s" in commands show aliases for the command (Ex: ".reverse/r <text>" Command can be run with .reverse or .r)
+<h3><max_messages> = The number of messages to search through
 <p>-------
-<p>Join "NotSoSuper's Dev" for any questions or help with the bot and free emotes!
-<p>https://discord.gg/QQENx4f
+<h3>Join "NotSoSuper's Dev" for any questions or help with the bot and free emotes!
+<a href="https://discord.gg/QQENx4f" target="_blank">https://discord.gg/QQENx4f</a>
 <p>-------
-<p>Tags:
+<h2>Tags:</h2>
 <p>    Info: All tags are global unless someone attempts to make a tag that is global in a specific server,
 <p>          then the global tag remains untouched but the new tag created in the server is specific for that server only.
 <p>    Problems/Reports: Contact @NotSoSuper#8800
@@ -40,7 +40,7 @@ title: NotSoBot Commands
 <p>        A Tag
 <p>    13. Gift a Tag/Transfer : .tag gift <tag_name> <@discord_user>
 <p>        Ownership
-<p>Fun:
+<h2>Fun:</h2>
 <p>    1. Random 4chan post    : .chan <board>*
 <p>      1. Get Info of a      : .chan parse <thread_url/post_url>
 <p>         Thread or Post
@@ -102,7 +102,7 @@ title: NotSoBot Commands
 <p>    36. Glitch an Image     : .glitch <image_url> <amount>* <seed>* <iterations>*
 <p>    37. Pixelsort an Image  : .sort <image_url> <interval_function (random, threshold, edges, waves, none)>* <pixel_angle>*
 <br/>
-<p>NSFW (Not Safe For Work):
+<h2>NSFW (Not Safe For Work):</h2>
 <p>    **(Requires the channel name to be nsfw) or (the channel topic to include [nsfw] in it to use commands)!**
 <p>    1. E621                 : .e621 <search/tags>
 <p>    2. Rule34               : .rule34 <search/tags>
@@ -118,162 +118,166 @@ title: NotSoBot Commands
 <p>        1. Remove all       : .bantag remove all
 <p>           Banned tags
 <br/>
-Utility/Information:
-    1. Invite OAUTH2 Link   : .invite
-    2. (^)Update Bot        : .update
-    3. (^)Logout of Discord : .die
-    4. Changes Status/Game  : .status <status>
-    5. (^)Say Text          : .say <text>
-    6. Server Info          : .server
-    7: Eval Node.JS         : .evaljs <code>
-    8. (^)Eval Python Code  : .debug <code>
-    9. (^)Loop              : .loop <amount> <commmand>
-    10. Ping                : .ping
-    11. Set Your Color      : .color <color>
-    12. Remove Your Color   : .uncolor
-    13. Colors Available    : .colors
-    14. (^^)Add Color       : .addcolor <hex/name/etc>
-    15. (^^)Add Colors      : .addcolors
-    16. Users Avatar Link   : .avatar <@discord_user>
-    17. Time/Date           : .time
-    18. Bots Uptime         : .uptime
-    19. Users Information   : .info <@discord_user>
-    20. Channel Information : .cinfo
-    21. Mentions in Channel : .mentions <max_messages>*
-    22. Search Keyword In   : .search <max_messages> <keyword/text>
-        Channels Messages
-    23. Upload A Gist       : .gist <text>
-    24. (^)Set Bot Avatar   : .setavatar <image_url>
-    25. (^)Set Bot Name     : .setname <text>
-    26. Steam User Info     : .steam <steamid/steam64/steamurl/customurl>
-    27. Find and Replace    : .s /<text to find>/<text to replace it with>/ OR (start message with) s/<text to find>/<text to replace it with>/
-        Text (Sed)
-    28. Screenshot a URL    : .screenshot <url>
-    29. Statistics          : .stats
-    30. GitHub Code Search  : .botc <text/code>
-    31. Ping IP/Site        : .iping <ip/url>
-    32. Leave Feedback or   : .complain <text>
-        Complaints
-    33. Name/Nickname Logs  : .names <@discord_user>*
-      1. Server Name Logs   : .snames
-    34. Online Staff        : .admins/mods
-    35. Reminder            : .remind <time> (1d1h = 1 day 1 hour) <text>*
-      1. List Reminders     : .remind list
-      2. Remove Reminder    : .remind remove <id>
-        1. Remove All       : .remind remove all
-    36. WolframAlpha        : .wolframalpha/wa <text/query>
-    37. Hash MD5            : .hash <text>
-      1. Hash SHA1          : .hash sha1 <text>
-      2. Hash SHA256        : .hash sha256 <text>
-      3. Hash SHA512        : .hash sha512 <text>
-
-Pager/Message Tracking:
-1. Pager
-    1. Pager Base Command   : .pg
-    2. Pager Add            : .pg add <text>
-    3. Pager Remove         : .pg remove <text>
-    4. Pager Set Method     : .pg method <pm/ping/both>
-       To Notify
-    5. Pager List           : .pg list
-    6. Private Message      : .pmentions
-       Mentions
-2. Message Tracking (^^)
-    1. Track a message      : .track <text>
-       and log to the
-       Current channel
-    2. Remove a tracked     : .track remove <text>
-       Message
-    3. Remove all tracked   : .track remove all
-       Messages
-    4. Change tracked
-       Message channel      : .track channel <#discord_channel>*
-    5. List tracked         : .track list
-       Messages
-
-Administration/Moderation (Manage_Messages Perm)(^^):
-    1. (^^)Server Logs      : .slogs
-    2. Remove Bot Messages  : .clean <max_messages>
-    3. Remove Messages      : .prune <max_messages>
-    4. Remove User Messages : .prune user <max_messages> <@discord_users>
-    5. Mute/Turn off a User : .off <@discord_user>
-    	1. List users "off"   : .off list
-    6. Un-mute/Turn on a    : .on <@discord_user>
-       User
-    	1. Turn on all users 	: .on all
-    7. Message Logs for     : .logs <max_messages>* <#discord_channel>*
-        The Channel
-    	1. Message logs for   : .logs user <max_messages>* <#discord_channel>*
-				 x User
-    8. (^^)Leave Server     : .leave
-    9. (^^)Create Role      : .createrole <role_name>
-    10. (^^)Delete Role     : .deleterole <role_name>
-    11. (^^)Add Role        : .addrole <role_name> <@discord_user>
-        To a user
-    12. (^^)Remove Role     : .removerole <role_name> <@discord_user>
-        From a user
-    13. Nickname            : .nick <nickname> <@discord_users>
-      1. Mass Change        : .nick mass <nickname>
-         Everyones Nickname
-      1. Mass Revert/Remove : .nick revert
-         Everyones Nickname
-    14. Create Invite       : .inv
-      1. Delete Invite      : .inv delete <invite_url>
-      2. List All Invites   : .inv list
-    15. Role Mute User      : .mute <@discord_users>
-      1. Unmute             : .unmute <@discord_users>
-    16. Pin a message       : .pin <max_messages> <message_id/message_content> (ID of the Message or Text in the content of the message)
-      1. After a Specific   : .pin date <MM/DD/YYYY>
-         Date
-      2. Before a Specific  : .pin before <MM/DD/YYYY> <max_messages> <message_content>
-         Date
-      3. Pin the first      : .pin first <#discord_channel>*
-         Message in current/specified channel
-    --Approve or Verify a member on server join by placing them in a temporary role which removes message (send, read_history) permissions.
-    17. Member Verification : .verification <#discord_channel>* <@discord_user(s)>* (to mention on user join)
-        and Approval Toggle
-    18. Verify a Member     : .verify <approval_id or @discord_user>
-      1. List members in    : .verify list
-         Queue
-      2. Check steam        : .verify check <steam_url/ID/64>
-         Account (PM ONLY)
-
-Blacklisting/Command Toggling/Prefix (^^):
---To unblacklist, run the command the same way as you did to blacklist.
-1. Blacklisting (Alias: ignore)
-    1. Blacklist User       : .blacklist <@discord_user>
-    2. Blacklist            : .blacklist channel <#discord_channel>*
-         Channel
-    3. (^)Global            : .blacklist global <@discord_user>
-       Blacklist
-2. Command Toggling (Alias: cmd)
-    1. Server Wide          : .command enable/disable/toggle <command_name> or .command <command_name>
-       Command Toggle
-    2. User Command Toggle  : .command user <command_name> <@discord_user>
-    3. Role Disable Command : .command role <command_name> <discord_role>
-       Toggle
-    4. Channel Disable      : .command channel <command_name> <#discord_channel>*
-       Command Toggle
-    5. (^)Global Command    : .command global <command_name>
-       Toggle
-    6. Enable all Disabled  : .command all
-       Commands
-    7. List all Disabled    : .command list
-       Commands
-    8. Disable all Commands : .command module <module_name>
-       in a Module
-      1. List all Modules   : .command module list
-3. Bot Server/Channel Prefix
-    1. Bot Prefix for       : .prefix <text>
-        The Whole Server
-      1. Bot Prefix for     : .prefix channel <text (wrap in "" if more than 1 word)> <#discord_channel>*
-         a Channel
-    2. Reset Custom Bot     : .prefix reset
-       Prefix Settings
-      1. Reset Server       : .prefix reset server
-         Prefix
-      2. Reset Channel      : .prefix reset channel <#discord_channel>*
-         Prefix
-      3. Reset All Channel  : .prefix reset channels
-         Prefixes
-      4. Reset All          : .prefix reset all
-         Prefix Settings
+<h2>Utility/Information:</h2>
+<p>    1. Invite OAUTH2 Link   : .invite
+<p>    2. (^)Update Bot        : .update
+<p>    3. (^)Logout of Discord : .die
+<p>    4. Changes Status/Game  : .status <status>
+<p>    5. (^)Say Text          : .say <text>
+<p>    6. Server Info          : .server
+<p>    7: Eval Node.JS         : .evaljs <code>
+<p>    8. (^)Eval Python Code  : .debug <code>
+<p>    9. (^)Loop              : .loop <amount> <commmand>
+<p>    10. Ping                : .ping
+<p>    11. Set Your Color      : .color <color>
+<p>    12. Remove Your Color   : .uncolor
+<p>    13. Colors Available    : .colors
+<p>    14. (^^)Add Color       : .addcolor <hex/name/etc>
+<p>    15. (^^)Add Colors      : .addcolors
+<p>    16. Users Avatar Link   : .avatar <@discord_user>
+<p>    17. Time/Date           : .time
+<p>    18. Bots Uptime         : .uptime
+<p>    19. Users Information   : .info <@discord_user>
+<p>    20. Channel Information : .cinfo
+<p>    21. Mentions in Channel : .mentions <max_messages>*
+<p>    22. Search Keyword In   : .search <max_messages> <keyword/text>
+<p>        Channels Messages
+<p>    23. Upload A Gist       : .gist <text>
+<p>    24. (^)Set Bot Avatar   : .setavatar <image_url>
+<p>    25. (^)Set Bot Name     : .setname <text>
+<p>    26. Steam User Info     : .steam <steamid/steam64/steamurl/customurl>
+<p>    27. Find and Replace    : .s /<text to find>/<text to replace it with>/ OR (start message with) s/<text to find>/<text to replace it with>/
+<p>        Text (Sed)
+<p>    28. Screenshot a URL    : .screenshot <url>
+<p>    29. Statistics          : .stats
+<p>    30. GitHub Code Search  : .botc <text/code>
+<p>    31. Ping IP/Site        : .iping <ip/url>
+<p>    32. Leave Feedback or   : .complain <text>
+<p>        Complaints
+<p>    33. Name/Nickname Logs  : .names <@discord_user>*
+<p>      1. Server Name Logs   : .snames
+<p>    34. Online Staff        : .admins/mods
+<p>    35. Reminder            : .remind <time> (1d1h = 1 day 1 hour) <text>*
+<p>      1. List Reminders     : .remind list
+<p>      2. Remove Reminder    : .remind remove <id>
+<p>        1. Remove All       : .remind remove all
+<p>    36. WolframAlpha        : .wolframalpha/wa <text/query>
+<p>    37. Hash MD5            : .hash <text>
+<p>      1. Hash SHA1          : .hash sha1 <text>
+<p>      2. Hash SHA256        : .hash sha256 <text>
+<p>      3. Hash SHA512        : .hash sha512 <text>
+<br/>
+<h2>Pager/Message Tracking:</h2>
+<h3>1. Pager</h3>
+<p>    1. Pager Base Command   : .pg
+<p>    2. Pager Add            : .pg add <text>
+<p>    3. Pager Remove         : .pg remove <text>
+<p>    4. Pager Set Method     : .pg method <pm/ping/both>
+<p>       To Notify
+<p>    5. Pager List           : .pg list
+<p>    6. Private Message      : .pmentions
+<p>       Mentions
+<h3>2. Message Tracking (^^)</h3>
+<p>    1. Track a message      : .track <text>
+<p>       and log to the
+<p>       Current channel
+<p>    2. Remove a tracked     : .track remove <text>
+<p>       Message
+<p>    3. Remove all tracked   : .track remove all
+<p>       Messages
+<p>    4. Change tracked
+<p>       Message channel      : .track channel <#discord_channel>*
+<p>    5. List tracked         : .track list
+<p>       Messages
+</br>
+<h2>Administration/Moderation (Manage_Messages Perm)(^^):</h2>
+<p>    1. (^^)Server Logs      : .slogs
+<p>    2. Remove Bot Messages  : .clean <max_messages>
+<p>    3. Remove Messages      : .prune <max_messages>
+<p>    4. Remove User Messages : .prune user <max_messages> <@discord_users>
+<p>    5. Mute/Turn off a User : .off <@discord_user>
+<p>    	1. List users "off"   : .off list
+<p>    6. Un-mute/Turn on a    : .on <@discord_user>
+<p>       User
+<p>    	1. Turn on all users 	: .on all
+<p>    7. Message Logs for     : .logs <max_messages>* <#discord_channel>*
+<p>        The Channel
+<p>    	1. Message logs for   : .logs user <max_messages>* <#discord_channel>*
+<p>				 x User
+<p>    8. (^^)Leave Server     : .leave
+<p>    9. (^^)Create Role      : .createrole <role_name>
+<p>    10. (^^)Delete Role     : .deleterole <role_name>
+<p>    11. (^^)Add Role        : .addrole <role_name> <@discord_user>
+<p>        To a user
+<p>    12. (^^)Remove Role     : .removerole <role_name> <@discord_user>
+<p>        From a user
+<p>    13. Nickname            : .nick <nickname> <@discord_users>
+<p>      1. Mass Change        : .nick mass <nickname>
+<p>         Everyones Nickname
+<p>      1. Mass Revert/Remove : .nick revert
+<p>         Everyones Nickname
+<p>    14. Create Invite       : .inv
+<p>      1. Delete Invite      : .inv delete <invite_url>
+<p>      2. List All Invites   : .inv list
+<p>    15. Role Mute User      : .mute <@discord_users>
+<p>      1. Unmute             : .unmute <@discord_users>
+<p>    16. Pin a message       : .pin <max_messages> <message_id/message_content> (ID of the Message or Text in the content of the message)
+<p>      1. After a Specific   : .pin date <MM/DD/YYYY>
+<p>         Date
+<p>      2. Before a Specific  : .pin before <MM/DD/YYYY> <max_messages> <message_content>
+<p>         Date
+<p>      3. Pin the first      : .pin first <#discord_channel>*
+<p>         Message in current/specified channel
+<p>    --Approve or Verify a member on server join by placing them in a temporary role which removes message (send, read_history) permissions.
+<p>    17. Member Verification : .verification <#discord_channel>* <@discord_user(s)>* (to mention on user join)
+<p>        and Approval Toggle
+<p>    18. Verify a Member     : .verify <approval_id or @discord_user>
+<p>      1. List members in    : .verify list
+<p>         Queue
+<p>      2. Check steam        : .verify check <steam_url/ID/64>
+<p>         Account (PM ONLY)
+<br/>
+<h2>Blacklisting/Command Toggling/Prefix (^^):</h2>
+<p>--To unblacklist, run the command the same way as you did to blacklist.
+<h3>1. Blacklisting (Alias: ignore)</h3>
+<p>    1. Blacklist User       : .blacklist <@discord_user>
+<p>    2. Blacklist            : .blacklist channel <#discord_channel>*
+<p>         Channel
+<p>    3. (^)Global            : .blacklist global <@discord_user>
+<p>       Blacklist
+<h3>2. Command Toggling (Alias: cmd)</h3>
+<p>    1. Server Wide          : .command enable/disable/toggle <command_name> or .command <command_name>
+<p>       Command Toggle
+<p>    2. User Command Toggle  : .command user <command_name> <@discord_user>
+<p>    3. Role Disable Command : .command role <command_name> <discord_role>
+<p>       Toggle
+<p>    4. Channel Disable      : .command channel <command_name> <#discord_channel>*
+<p>       Command Toggle
+<p>    5. (^)Global Command    : .command global <command_name>
+<p>       Toggle
+<p>    6. Enable all Disabled  : .command all
+<p>       Commands
+<p>    7. List all Disabled    : .command list
+<p>       Commands
+<p>    8. Disable all Commands : .command module <module_name>
+<p>       in a Module
+<p>      1. List all Modules   : .command module list
+<h3>3. Bot Server/Channel Prefix</h3>
+<p>    1. Bot Prefix for       : .prefix <text>
+<p>        The Whole Server
+<p>      1. Bot Prefix for     : .prefix channel <text (wrap in "" if more than 1 word)> <#discord_channel>*
+<p>         a Channel
+<p>    2. Reset Custom Bot     : .prefix reset
+<p>       Prefix Settings
+<p>      1. Reset Server       : .prefix reset server
+<p>         Prefix
+<p>      2. Reset Channel      : .prefix reset channel <#discord_channel>*
+<p>         Prefix
+<p>      3. Reset All Channel  : .prefix reset channels
+<p>         Prefixes
+<p>      4. Reset All          : .prefix reset all
+<p>         Prefix Settings
+<br/>
+<br/>
+<br/>
+<p> View The Original Here >>> <a href="https://mods.nyc/help/" target="_blank">NotSoBot Command List</a></p>
