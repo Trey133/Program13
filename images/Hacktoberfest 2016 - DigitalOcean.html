@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner -->
+<html lang="en" class="page-index wf-proximanova-n6-active wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-active" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Hacktoberfest 2016 - DigitalOcean</title>
+    <link rel="apple-touch-icon" href="https://hacktoberfest.digitalocean.com/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://hacktoberfest.digitalocean.com/favicon.png">
+    <meta name="description" content="Hacktoberfest is a month-long celebration of open source software.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@digitalocean">
+    <meta name="twitter:creator" content="@digitalocean">
+    <meta name="twitter:title" content="Hacktoberfest 2016 - DigitalOcean">
+    <meta name="twitter:description" content="Hacktoberfest is a month-long celebration of open source software.">
+    <meta name="twitter:image" content="https://hacktoberfest.digitalocean.com/assets/hacktoberfest_2016_social-dfc35d7b6fbc45318e6a210e93899ddcd6aad06afac11489af4498614c5e76a6.jpg">
+
+    <meta name="og:title" content="Hacktoberfest 2016 - DigitalOcean">
+    <meta name="og:description" content="Hacktoberfest is a month-long celebration of open source software.">
+    <meta name="og:site_name" content="DigitalOcean">
+    <meta property="og:url" content="https://hacktoberfest.digitalocean.com/">
+    <meta property="og:image" content="https://hacktoberfest.digitalocean.com/assets/hacktoberfest_2016_social-dfc35d7b6fbc45318e6a210e93899ddcd6aad06afac11489af4498614c5e76a6.jpg">
+
+    <meta itemprop="name" content="Hacktoberfest 2016 - DigitalOcean">
+    <meta itemprop="description" content="Hacktoberfest is a month-long celebration of open source software.">
+
+      <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68219300-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+    <script src="./Hacktoberfest 2016 - DigitalOcean_files/raven.min.js"></script>
+    <script src="./Hacktoberfest 2016 - DigitalOcean_files/polyfill.min.js"></script>
+    <script type="text/javascript" src="./Hacktoberfest 2016 - DigitalOcean_files/csy1quj.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://fonts.typekit.net/af/03034e/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://fonts.typekit.net/af/5a684a/00000000000000003b9ad1b2/27/l?subset_id=2&fvd=i7) format("woff2");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-n6;src:url(https://fonts.typekit.net/af/921f74/00000000000000003b9ad1bb/27/l?subset_id=2&fvd=n6) format("woff2");font-weight:600;font-style:normal;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://fonts.typekit.net/af/edab9a/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://fonts.typekit.net/af/1b9fb4/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style><script type="text/javascript">try{Typekit.load({ async: true });}catch(e){}</script>
+      <script>
+        Raven.config('https://29277abbf80a4339b38d005ebe613f79@errors.internal.digitalocean.com/138').install();
+      </script>
+    <link rel="stylesheet" media="all" href="./Hacktoberfest 2016 - DigitalOcean_files/application-b1b959d702e84821ab71d9826843a789b76cb932b47847edb37c88993c99f335.css">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ZD+Vod/6ivXB6GI6i3khtbwx07UvDPkknTxS55/wRC9CKXLYOR8mDMXd65NvRcMdNWrU6d8A3ihUlRM7Mx5ylw=="><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/03034e/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/5a684a/00000000000000003b9ad1b2/27/l?subset_id=2&fvd=i7) format("woff2");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/921f74/00000000000000003b9ad1bb/27/l?subset_id=2&fvd=n6) format("woff2");font-weight:600;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/edab9a/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://fonts.typekit.net/af/1b9fb4/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  </head>
+  <body><iframe id="publishiframe" style="display:none;" src="./Hacktoberfest 2016 - DigitalOcean_files/content-script.html"></iframe>
+
+    
+<section class="Section Section--HF Section--Hero u-pt--remove u-contrast">
+  <header class="TopNav">
+  <div class="Container">
+    <div class="TopNav-container">
+      <nav class="TopNav-left">
+        <a href="https://hacktoberfest.digitalocean.com/" class="TopNav-logo">
+          <img src="./Hacktoberfest 2016 - DigitalOcean_files/do-logo-448f484fa2606cccf1f48c16b8e8e799e56c30e40f6f8c4afb3aa8a53ad5dfa0.svg" alt="Do logo">
+        </a>
+      </nav>
+      <nav class="TopNav-right u-hiddenDown--small">
+        <ul class="Inline Inline--medium u-textNoBreak TopNav-list">
+          <li><a data-scroll="" class="TopNav-link" href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects">Featured Projects</a></li>
+          <li><a data-scroll="" class="TopNav-link" href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#details">Details</a></li>
+          <li><a data-scroll="" class="TopNav-link" href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#resources">Resources</a></li>
+          <li><a class="TopNav-link" href="https://hacktoberfest.digitalocean.com/sign_up/register">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <div class="Container Container--small u-textCenter">
+    <img class="HF-logo" src="./Hacktoberfest 2016 - DigitalOcean_files/hf_logo-52c2c8901ebacc7c28dc212084389f4d950f89c3599db4e37cd9aa572ed096b3.svg" alt="Hf logo">
+    <p class="u-textXLarge u-textBold u-mt--medium">Support and celebrate open source. Earn a limited edition <span class="u-textNoBreak">T-shirt</span>.</p>
+    <a class="Button Button--primary u-mt--xlarge" href="https://hacktoberfest.digitalocean.com/sign_up/register">Start Hacking</a>
+    <p class="u-textBold u-contrast">Hacktoberfest is created in partnership with <img class="HF-ComingSoon-ghlogo" src="./Hacktoberfest 2016 - DigitalOcean_files/gh-logo-1df178acec9bd2612a0d07dea8298000b976f0c4080567ec00498731b7c86e55.svg" alt="Gh logo"></p>
+  </div>
+</section>
+
+<section class="Section">
+  <div class="Container">
+    <div class="Row Row-xlargeGutter u-textCenter">
+      <h2>Get involved</h2>
+        <div class="Column-5--medium">
+          <img class="HF-icon-illustration" src="./Hacktoberfest 2016 - DigitalOcean_files/submit-icon-015287cd0035ea058768e1702a9848c0b3ebdab2766737663d4ce032c3a672fc.svg" alt="Submit icon">
+          <p class="u-textBold u-textLarge">Submit your open-source project</p>
+          <p>Apply the label "Hacktoberfest" to issues in your GitHub-hosted project that are ready for new contributors to work on. Learn more about <a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#resources" data-scroll="" class="HF-link u-textBold">what makes an issue a good fit</a>.</p>
+        </div>
+
+        <div class="Column-2--medium vs-text-container">
+          <span class="vs-text">or</span>
+        </div>
+
+        <div class="Column-5--medium">
+          <img class="HF-icon-illustration" src="./Hacktoberfest 2016 - DigitalOcean_files/contribute-icon-c5a8a1030820a3100b2c44d0b0dde4763dd50eaa57105418339e003164ed12e9.svg" alt="Contribute icon">
+          <p class="u-textBold u-textLarge">Contribute to other open-source projects</p>
+          <p>Submit four pull requests to win a free T-shirt. <a href="https://github.com/search?l=&amp;q=state%3Aopen+label%3Ahacktoberfest&amp;ref=advsearch&amp;type=Issues&amp;utf8=%E2%9C%93" class="HF-link u-textBold">Browse issues labeled "Hacktoberfest"</a> on GitHub for other projects.</p>
+        </div>
+      </div>
+
+      <div class="u-textCenter u-mt--large">
+        <a class="Button Button--primary Button--space" href="https://hacktoberfest.digitalocean.com/sign_up/register">Sign Up to Contribute</a>
+      </div>
+
+    </div>
+  
+</section>
+<div class="Section-divider">
+  <div class="Section-divider--left">
+    <img src="./Hacktoberfest 2016 - DigitalOcean_files/section-divider-left-6ce1eb6e1d3c5446bf689f29be01bfafd04d179718a29bdf408098f829c71763.svg" alt="Section divider left">
+  </div>
+  <div class="Section-divider--right">
+    <img src="./Hacktoberfest 2016 - DigitalOcean_files/section-divider-right-4e97e2ffa0b87f06cc150861842a7f48d620812ec503cc0494ebba559ae728a9.svg" alt="Section divider right">
+  </div>
+</div>
+<a name="featured-projects"></a>
+<section class="Section">
+  <div class="Container">
+    <div class="u-textCenter u-mb--large">
+      <h2>Featured Projects</h2>
+      <p class="u-mb--large">Here are some open source projects you can contribute to:</p>
+      <ul class="Inline Inline-nav Inline--center u-textBold HF-languageList">
+        <li class="is-active"><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-All">All</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Bash">Bash</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-C++">C++</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Coffeescript">Coffeescript</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Go">Go</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Hack">Hack</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-JavaScript">JavaScript</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-CSS">CSS</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-PHP">PHP</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Python">Python</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Ruby">Ruby</a></li>
+        <li><a href="https://hacktoberfest.digitalocean.com/?utm_source=community_tutorial_banner#featured-projects-Rust">Rust</a></li>
+      </ul>
+    </div>
+    <p class="HF-noResultText u-textCenter is-hidden" aria-hidden="true"> No Results Yet :(</p>
+    <ul class="BlockGrid BlockGrid-2--medium">
+        <li class="HF-featuredItem" data-lang="Coffeescript">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Atom</div>
+               
+            </div>
+            <p class="HF-project--desc">A hackable text editor for the 21st century, built on Electron.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/atom/atom">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Coffeescript</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="C++">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Electron</div>
+               
+            </div>
+            <p class="HF-project--desc">A framework for writing cross-platform desktop apps in JavaScript, HTML &amp; CSS.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/atom/electron">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">C++</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Ruby">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">RSpec</div>
+               
+            </div>
+            <p class="HF-project--desc">Behaviour Driven Development for Ruby</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/rspec/rspec-rails">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Ruby</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="CSS">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">CSSgram</div>
+               
+            </div>
+            <p class="HF-project--desc">A CSS library recreating Instagram filters.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/una/CSSgram">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">CSS</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Ruby">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Fog</div>
+               
+            </div>
+            <p class="HF-project--desc">A Ruby cloud services library.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/fog/fog">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Ruby</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Go">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Hugo</div>
+               
+            </div>
+            <p class="HF-project--desc">A static site generator written in Go.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/spf13/hugo">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Go</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Python">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Libcloud</div>
+               
+            </div>
+            <p class="HF-project--desc">A Python library for interacting with many of the popular cloud service providers using a unified API.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/apache/libcloud">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Python</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Go">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Prometheus</div>
+               
+            </div>
+            <p class="HF-project--desc">A service monitoring system and time series database.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/prometheus">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Go</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="PHP">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Laravel</div>
+               
+            </div>
+            <p class="HF-project--desc">A PHP web application framework with expressive, elegant syntax.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/laravel/laravel">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">PHP</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="JavaScript">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Hoodie</div>
+               
+            </div>
+            <p class="HF-project--desc">A backend for Offline First applications.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/hoodiehq/hoodie">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">JavaScript</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="JavaScript">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">CodeBuddies</div>
+               
+            </div>
+            <p class="HF-project--desc">CodeBuddies.org hangouts chat platform v2.0.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/codebuddiesdotorg/cb-v2-scratch">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">JavaScript</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="PHP">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Cachet</div>
+               
+            </div>
+            <p class="HF-project--desc">A status page system written in PHP.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/cachethq/Cachet">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">PHP</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Bash">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Dokku</div>
+               
+            </div>
+            <p class="HF-project--desc">A Docker-powered, mini Heroku implemented in around 200 lines of Bash.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/dokku/dokku">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Bash</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="C++">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">PhantomJS</div>
+               
+            </div>
+            <p class="HF-project--desc">A headless WebKit scriptable with JavaScript.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/ariya/phantomjs">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">C++</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="JavaScript">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Ember.js</div>
+               
+            </div>
+            <p class="HF-project--desc">A JavaScript framework for creating ambitious web applications.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/emberjs/ember.js">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">JavaScript</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="CSS">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">UIkit</div>
+               
+            </div>
+            <p class="HF-project--desc">A lightweight and modular front-end framework for developing fast and powerful web interfaces.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/uikit/uikit">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">CSS</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="JavaScript">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">HospitalRun</div>
+               
+            </div>
+            <p class="HF-project--desc">The Ember front-end for HospitalRun, a modern hospital information system.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/HospitalRun/hospitalrun-frontend">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">JavaScript</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Rust">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Habitat</div>
+               
+            </div>
+            <p class="HF-project--desc">An application automation framework that allows you to build applications that have automation built-in.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/habitat-sh/habitat">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Rust</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Rust">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Servo</div>
+               
+            </div>
+            <p class="HF-project--desc">A modern, high-performance browser engine written in Rust.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/servo/servo">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Rust</div>
+            </div>
+          </div>
+        </li>
+        <li class="HF-featuredItem" data-lang="Hack">
+          <div class="Box Box--small HF-project ">
+            <div class="u-flex u-flexMiddle HF-projectHeader">
+              <div class="u-flexItem1 u-textLarge u-textBold">Facebook CTF</div>
+               
+            </div>
+            <p class="HF-project--desc">A platform to host Capture the Flag competitions.</p>
+            <div class="u-flex u-flexMiddle">
+              <div class="u-flexItem1"><a href="https://github.com/facebook/fbctf">View Project</a></div>
+              <div class="u-textPrimary u-mt--remove">Hack</div>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+    <a href="https://github.com/search?l=&amp;q=state%3Aopen+label%3Ahacktoberfest&amp;ref=advsearch&amp;type=Issues&amp;utf8=%E2%9C%93" class="Button Button--primary Button--fullWidth u-mt--large">Browse more projects on GitHub</a>
+  </div>
+</section>
+
+<a name="details"></a>
+<section class="Section">
+  <div class="Container Container--small">
+    <h2 class="u-textCenter u-mb--large">What you need to know</h2>
+
+    <div class="Row Row-largeGutter--medium u-flexMiddle">
+      <div class="Column-7--medium">
+        <img class="u-hiddenDown--small" src="./Hacktoberfest 2016 - DigitalOcean_files/h-ceffbf9c09a918a4eda57f3a80f70e71b778ae233ece6f0ce41105316ddd3a64.svg" alt="H">
+      </div>
+      <div class="Column-5--medium">
+        <h3>Event details</h3>
+        <ul class="HF-list HF-list--linked">
+          <li>Hacktoberfest is <span class="u-textBold">open to everyone</span> in our global community!</li>
+          <li>Pull requests can be made in <span class="u-textBold">any GitHub-hosted repositories/projects.</span></li>
+          <li>You can sign up anytime between October 1 and October 31.</li>
+        </ul>
+        <h3>Rules</h3>
+        <p>To get a shirt, you must <span class="u-textBold">make four pull requests</span> between October 1-31.</p>
+      </div>
+  </div>
+</div></section>
+<div class="Section-divider">
+  <div class="Section-divider--center">
+    <img src="./Hacktoberfest 2016 - DigitalOcean_files/section-divider-center-c76cb7c158f8b549a7da1655e8c5c893bd2593a418878dc083ec326417bea088.svg" alt="Section divider center">
+  </div>
+</div>
+<a name="resources"></a>
+<section class="Section">
+  <div class="Container">
+    <h2 class="u-textCenter u-mb--large">Resources</h2>
+      <div class="Row Row-xlargeGutter">
+      <div class="Column-6--medium">
+        <h3>Useful Tips</h3>
+        <p class="u-textBold">Here are things to keep in mind when contributing:</p>
+        <ul class="HF-list">
+          <li>A contribution can be anything—fixing bugs, creating new features, or updating and writing documentation.</li>
+          <li>Look for a repo's CONTRIBUTING.md file for contribution guidelines and instructions.</li>
+        </ul>
+        <p class="u-textBold">Here are tips for creating a good Hacktoberfest issue in your project:</p>
+          <ul class="HF-list">
+            <li>Add a CONTRIBUTING.md file with contribution guidelines to your repo.</li>
+            <li>Choose issues that have a well-defined scope and are self-contained.</li>
+            <li>They should serve as good introductions to the codebase.</li>
+            <li>Consider adopting a code of conduct to foster a greater sense of community.</li>
+          </ul>
+         <p class="u-textBold">Have questions?</p>
+          <p>Get in touch with our team by sending an email to <a href="mailto:hacktoberfest@digitalocean.com">hacktoberfest@digitalocean.com</a>.</p>
+      </div>
+      <div class="Column-6--medium">
+        <h3>Getting Started</h3>
+        <ul class="HF-list HF-list--docs">
+          <li>
+            <p><a class="u-textBold" href="https://www.digitalocean.com/community/tutorials/an-introduction-to-contributing-to-open-source-projects-and-installing-git">An Introduction to Open Source (Tutorial Series)</a><br>by Lisa Tagliaferri</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="https://guides.github.com/activities/contributing-to-open-source/">Contributing to Open Source on GitHub</a><br>by GitHub</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="http://www.erikaheidi.com/blog/a-beginners-guide-to-open-source-making-your-first-contribution">A Beginner's Guide to Open Source: The Best Advice for Making your First Contribution</a><br>by Erika Heidi</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="https://medium.com/@kentcdodds/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4#.2709vufoy">What open source project should I contribute to?</a><br>by Kent C. Dodds</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="http://hood.ie/blog/welcoming-communities">Welcoming Communities</a><br>by Gregor Martynus, Hoodie</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="https://the-pastry-box-project.net/charlotte-spencer/2015-september-16">Lowering the barriers</a><br>by Charlotte Spencer</p>
+          </li>
+          <li>
+            <p><a class="u-textBold" href="http://contributor-covenant.org/">Contributor Covenant: A Code of Conduct for Open Source Projects</a><br>by Coraline Ada Ehmke</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="Footer u-textCenter">
+  <img class="Footer-logo" src="./Hacktoberfest 2016 - DigitalOcean_files/cloud-76315fe4218288d9b1c393e592a8d114669d1c4918a298a68f63372a2fcab542.svg" alt="Cloud">
+</footer>
+
+
+    <script src="./Hacktoberfest 2016 - DigitalOcean_files/forms2.min.js"></script>
+    <script src="./Hacktoberfest 2016 - DigitalOcean_files/application-023a3843a1089f8711b531e649b2e5eb31ad782ccbd88d541490644b73f03483.js"></script>
+  
+
+<div class="notify js-notify">
+    <div class="notify__loader">
+    </div>
+    <div class="notify__icon"></div>
+    <div class="notify__body">
+      <div class="notify__body__message">
+        <span class="js-notify-message">There was an error loading this message</span>
+        <span class="notify__body__actions js-notify-action">
+          <a href="https://web.crowdfireapp.com/#/publish/timeline" target="_blank">
+            Go to Timeline
+          </a>
+        </span>
+      </div>
+      <span class="arrow arrow--small">⤴</span>
+    </div>
+  </div><span id="publishImageBtn" style="display: none; position: absolute; z-index: 8675400; width: 100px; height: 25px; background-image: url(&quot;chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/publish-image.png&quot;); background-size: 100px 25px; opacity: 0.9; cursor: pointer; border-radius: 4px;"></span><span id="selectedIcon" style="display: none; position: absolute; z-index: 8675400; width: 40px; height: 40px; background-image: url(&quot;chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/selected-icon.png&quot;); background-size: cover; cursor: pointer; border-radius: 4px;"></span></body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/template/content-script.html -->
+<html class="wf-oswald-n7-active wf-lato-n4-active wf-lato-n7-active wf-lato-n3-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Publish let's you easily post to multiple twitter and Instagram accounts.</title>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/datepicker/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/nProgress/nProgress.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/datepicker/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/tooltipster/tooltipster.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/css/page-popup.css">
+    <style type="text/css">
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        font-family: 'Lato', sans-serif!important;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/jquery.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/webfonts.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/twitter-text.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/nProgress/nProgress.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/analytics.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/datepicker/datepicker.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/tooltipster/tooltipster.min.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/vendor/autosize.min.js"></script>
+    <script type="text/javascript" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/js/page-popup.js"></script><link rel="stylesheet" href="./css" media="all">
+  </head>
+  <body>
+    <div class="closePopup pointer">×</div>
+    <div class="popupWrapper">
+      <div class="popup popup--modal js-popup" data-window-type="page" data-type="default">
+        <div class="loginModal" style="display: block;">
+  <img src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/cf-logo.png" class="logo">
+  <a class="btn btn-twitter js-btn-login" data-provider="twitter">
+    Login with Twitter
+  </a>
+  <a class="btn btn-insta js-btn-login" data-provider="instagram">
+    Login with Instagram
+  </a></div>
+        <div class="appInstall"></div>
+        <div class="popup__account">
+          <div class="addProfile pointer">
+            <img src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/btn-add-account.png" class="full-width">
+          </div>
+          <div class="accountList js-accountList"></div>
+        </div>
+        <div class="popup__compose">
+          <textarea class="textContent popup__compose__textarea js-compose-textarea" placeholder="What&#39;s on your Mind?"></textarea>
+          <div class="image_cache" style="display:none;"><img src="./hero-258706df8b7979737aece6838198e278f70305ad2730ab6fcb0d122277c75fef.jpg"><img src="./do-logo-448f484fa2606cccf1f48c16b8e8e799e56c30e40f6f8c4afb3aa8a53ad5dfa0.svg"><img src="./hf_logo-52c2c8901ebacc7c28dc212084389f4d950f89c3599db4e37cd9aa572ed096b3.svg"><img src="./gh-logo-1df178acec9bd2612a0d07dea8298000b976f0c4080567ec00498731b7c86e55.svg"><img src="./submit-icon-015287cd0035ea058768e1702a9848c0b3ebdab2766737663d4ce032c3a672fc.svg"><img src="./contribute-icon-c5a8a1030820a3100b2c44d0b0dde4763dd50eaa57105418339e003164ed12e9.svg"><img src="./section-divider-left-6ce1eb6e1d3c5446bf689f29be01bfafd04d179718a29bdf408098f829c71763.svg"><img src="./section-divider-right-4e97e2ffa0b87f06cc150861842a7f48d620812ec503cc0494ebba559ae728a9.svg"><img src="./h-ceffbf9c09a918a4eda57f3a80f70e71b778ae233ece6f0ce41105316ddd3a64.svg"><img src="./section-divider-center-c76cb7c158f8b549a7da1655e8c5c893bd2593a418878dc083ec326417bea088.svg"><img src="./cloud-76315fe4218288d9b1c393e592a8d114669d1c4918a298a68f63372a2fcab542.svg"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%230069ff&#39; width=&#39;12&#39; height=&#39;12&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M30.72 5.824a1.816 1.816 0 0 0-2.56 0l-16.64 16.64-7.744-7.744c-.64-.64-1.856-.64-2.496 0a1.816 1.816 0 0 0 0 2.56l8.96 8.96c.32.32.768.512 1.216.512.256 0 .832 0 1.344-.512L30.72 8.32a1.739 1.739 0 0 0 0-2.496z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%23fff&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M30.72 5.824a1.816 1.816 0 0 0-2.56 0l-16.64 16.64-7.744-7.744c-.64-.64-1.856-.64-2.496 0a1.816 1.816 0 0 0 0 2.56l8.96 8.96c.32.32.768.512 1.216.512.256 0 .832 0 1.344-.512L30.72 8.32a1.739 1.739 0 0 0 0-2.496z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 35&#39; fill=&#39;%230069ff&#39; width=&#39;8&#39; height=&#39;8&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M32 23.488l-11.12-6.42 11.118-6.42-2.409-4.224-11.091 6.422V0H13.62v12.841L2.468 6.421.015 10.644l11.118 6.423L0 23.492l2.467 4.224 11.154-6.424v12.844h4.877V21.29l11.093 6.422L32 23.488z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%23f25041&#39; width=&#39;12&#39; height=&#39;12&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M29.12 26.816l-10.88-10.88L29.12 5.184c.32-.32.448-.704.448-1.088 0-.448-.192-.832-.448-1.088-.576-.576-1.664-.576-2.24 0L16.064 13.76 5.12 2.816c-.576-.576-1.664-.576-2.24 0-.64.64-.64 1.6 0 2.24l10.944 11.008L2.88 26.944c-.32.32-.448.704-.448 1.088 0 .448.192.832.448 1.088s.64.448 1.024.448c.448 0 .896-.256 1.088-.576l10.944-10.816L26.88 29.184c.256.256.64.448 1.024.448s.832-.192 1.152-.576c.64-.64.64-1.6.064-2.24z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%2300cd8d&#39; width=&#39;12&#39; height=&#39;12&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M30.72 5.824a1.816 1.816 0 0 0-2.56 0l-16.64 16.64-7.744-7.744c-.64-.64-1.856-.64-2.496 0a1.816 1.816 0 0 0 0 2.56l8.96 8.96c.32.32.768.512 1.216.512.256 0 .832 0 1.344-.512L30.72 8.32a1.739 1.739 0 0 0 0-2.496z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;rgba(51, 51, 51, 0.75)&#39; width=&#39;12&#39; height=&#39;12&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M31.296 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.512L16 20.736 3.2 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.448S.256 8.32.256 8.768c0 .512.192.96.512 1.28L14.72 24.32c.32.32.704.512 1.152.512.256 0 .512-.064.768-.192.128-.064.256-.128.384-.128l.128-.064 14.016-14.336c.768-.64.704-1.728.128-2.432z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%23fff&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M31.296 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.512L16 20.736 3.2 7.68c-.256-.32-.704-.512-1.216-.512-.448 0-.896.192-1.216.448S.256 8.32.256 8.768c0 .512.192.96.512 1.28L14.72 24.32c.32.32.704.512 1.152.512.256 0 .512-.064.768-.192.128-.064.256-.128.384-.128l.128-.064 14.016-14.336c.768-.64.704-1.728.128-2.432z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%230069ff&#39; width=&#39;14&#39; height=&#39;14&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M30.976 28.608l-9.984-9.984a11.16 11.16 0 0 0 2.24-6.72c0-6.272-5.056-11.328-11.328-11.328S.512 5.632.512 11.904 5.568 23.232 11.84 23.232c2.496 0 4.8-.832 6.72-2.24l9.984 9.984c.256.256.704.448 1.152.448s.768-.192 1.088-.32l.128-.128c.704-.64.704-1.728.064-2.368zM11.84 19.776c-4.352 0-7.872-3.52-7.872-7.872s3.52-7.872 7.872-7.872c4.416 0 7.872 3.456 7.872 7.872 0 4.288-3.52 7.872-7.872 7.872z&#39;/%3E%3C/svg%3E"><img src="data:image/svg+xml;charset=utf-8,%3Csvg viewBox=&#39;0 0 32 32&#39; fill=&#39;%23fff&#39; width=&#39;10&#39; height=&#39;10&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cpath d=&#39;M29.12 26.816l-10.88-10.88L29.12 5.184c.32-.32.448-.704.448-1.088 0-.448-.192-.832-.448-1.088-.576-.576-1.664-.576-2.24 0L16.064 13.76 5.12 2.816c-.576-.576-1.664-.576-2.24 0-.64.64-.64 1.6 0 2.24l10.944 11.008L2.88 26.944c-.32.32-.448.704-.448 1.088 0 .448.192.832.448 1.088s.64.448 1.024.448c.448 0 .896-.256 1.088-.576l10.944-10.816L26.88 29.184c.256.256.64.448 1.024.448s.832-.192 1.152-.576c.64-.64.64-1.6.064-2.24z&#39;/%3E%3C/svg%3E"></div>
+          <div class="popup__compose__image">
+    <div class="imageSelection  imageSelection--maker" style="display:none;">
+    <div class="mainImage" style="background-image: url(&quot;chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/stock/1.jpg&quot;);">
+      <span class="deleteImage"></span>
+      <textarea rows="1" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+    </div>
+    <div class="navigation">
+      <div class="thumb selected" data-index="1"></div>
+      <div class="thumb" data-index="2"></div>
+      <div class="thumb" data-index="3"></div>
+      <div class="thumb" data-index="4"></div>
+      <div class="thumb" data-index="5"></div>
+      <div class="thumb" data-index="6"></div>
+      <div class="thumb" data-index="7"></div>
+      <div class="thumb" data-index="8"></div>
+      <div class="thumb" data-index="9"></div>
+      <div class="thumb" data-index="10"></div>
+      <div class="thumb" data-index="11"></div>
+      <div class="thumb" data-index="12"></div>
+      <div class="thumb" data-index="13"></div>
+      <div class="thumb" data-index="14"></div>
+      <div class="thumb" data-index="15"></div>
+      <div class="thumb" data-index="16"></div>
+      <div class="thumb" data-index="17"></div>
+      <div class="thumb" data-index="18"></div>
+    </div>
+  </div>
+    <div class="imageSelection imageSelection--fetcher" style="display:none;"><div class="mainImage"><div class="relative"><img src="./hero-258706df8b7979737aece6838198e278f70305ad2730ab6fcb0d122277c75fef.jpg"><span class="deleteImage"></span></div></div><div class="navigation"><div class="thumb selected" style="background-image: url(&quot;https://hacktoberfest.digitalocean.com/assets/hero-258706df8b7979737aece6838198e278f70305ad2730ab6fcb0d122277c75fef.jpg&quot;);"></div></div></div></div>
+          <div class="popup__compose__actions cf-clearfix">
+            <button class="useImage pointer js-useImage cf-hide">
+              <img class="icon icon--add-image" src="chrome-extension://jgnbklefkgedfbpjebhjgibfnobjcbli/images/add-image.png">
+              <span class="button-label js-button-label">Include page image</span>
+            </button>
+            <div class="remainingChars">
+              <span class="remainingChars js-remainingChars--twitter cf-hide">
+                <span class="icon-twitter"></span>
+                <span class="remainingCharsCount js-remainingCharsCount--twitter"></span>
+              </span>
+              <span class="remainingChars js-remainingChars--instagram cf-hide">
+                <span class="icon-instagram"></span>
+                <span class="remainingCharsCount js-remainingCharsCount--instagram"></span>
+              </span>
+            </div>
+            <div class="js-calendar calendar cf-hide"><div class="datepicker datepicker-inline datetimepicker-inline"><div class="datepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: hidden;">«</th><th colspan="5" class="datepicker-switch">October 2016</th><th class="next" style="visibility: visible;">»</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="old disabled day">25</td><td class="old disabled day">26</td><td class="old disabled day">27</td><td class="old disabled day">28</td><td class="old disabled day">29</td><td class="old disabled day">30</td><td class="active disabled day">1</td></tr><tr><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td></tr><tr><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td></tr><tr><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td></tr><tr><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td></tr><tr><td class="day">30</td><td class="day">31</td><td class="new day">1</td><td class="new day">2</td><td class="new day">3</td><td class="new day">4</td><td class="new day">5</td></tr></tbody><tfoot><tr><th class="datepicker-time" colspan="7"><div class="hourContainer"><select name="hour" class="chzn-select"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span class="currentTimeName">11</span>:</div><div class="minuteContainer"><select name="minute" class="chzn-select"><option value="0">00</option><option value="5">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option></select><span class="currentTimeName">05</span></div><div class="ampmContainer"><select name="ampm" class="chzn-select"><option value="AM">AM</option><option value="PM">PM</option></select><span class="currentTimeName">PM</span></div><button class="btn btn--primary js-action-calendar">OK</button></th></tr></tfoot></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: hidden;">«</th><th colspan="5" class="datepicker-switch">2016</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="month disabled">Jan</span><span class="month disabled">Feb</span><span class="month disabled">Mar</span><span class="month disabled">Apr</span><span class="month disabled">May</span><span class="month disabled">Jun</span><span class="month disabled">Jul</span><span class="month disabled">Aug</span><span class="month disabled">Sep</span><span class="month active">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th class="datepicker-time" colspan="7"><div class="hourContainer"><select name="hour" class="chzn-select"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span class="currentTimeName">12</span>:</div><div class="minuteContainer"><select name="minute" class="chzn-select"><option value="0">00</option><option value="5">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option></select><span class="currentTimeName">00</span></div><div class="ampmContainer"><select name="ampm" class="chzn-select"><option value="AM">AM</option><option value="PM">PM</option></select><span class="currentTimeName">PM</span></div><button class="btn btn--primary js-action-calendar">OK</button></th></tr></tfoot></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: hidden;">«</th><th colspan="5" class="datepicker-switch">2010-2019</th><th class="next" style="visibility: visible;">»</th></tr></thead><tbody><tr><td colspan="7"><span class="year old disabled">2009</span><span class="year disabled">2010</span><span class="year disabled">2011</span><span class="year disabled">2012</span><span class="year disabled">2013</span><span class="year disabled">2014</span><span class="year disabled">2015</span><span class="year active">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year new">2020</span></td></tr></tbody><tfoot><tr><th class="datepicker-time" colspan="7"><div class="hourContainer"><select name="hour" class="chzn-select"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span class="currentTimeName">12</span>:</div><div class="minuteContainer"><select name="minute" class="chzn-select"><option value="0">00</option><option value="5">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option></select><span class="currentTimeName">00</span></div><div class="ampmContainer"><select name="ampm" class="chzn-select"><option value="AM">AM</option><option value="PM">PM</option></select><span class="currentTimeName">PM</span></div><button class="btn btn--primary js-action-calendar">OK</button></th></tr></tfoot></table></div></div></div>
+            <ul class="js-more-actions more-actions cf-hide">
+              <li data-action="schedule" class="js-action">Schedule</li>
+              <li data-action="now" class="js-action">Publish Now</li>
+              <li data-action="best" class="js-action selected">Best Time</li>
+            </ul>
+            <button class="btn btn--primary btn--right-rounded js-action-primary" data-action="best">
+              Best Time
+            </button>
+            <button class="btn btn--primary btn--left-rounded btn--more icon icon--up-arrow js-action-more">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/unknown" class="profile-template">
+      <div class="profile pointer {{selectedClass}}" data-authuid="{{authUid}}" class="tooltip" title="{{name}} (@{{handle}})">
+        <div class="profile__avatar">
+          <img src="{{avatar}}" class="full-width">
+        </div>
+        <div class="profile__platform">
+          <img src="../images/{{platform}}.png" class="full-width">
+        </div>
+      </div>
+    </script>
+  
+
+</body></html>
