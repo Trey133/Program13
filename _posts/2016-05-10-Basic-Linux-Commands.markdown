@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Linux Commands
-date: 10-05-2016
+date: 05-10-2016
 catagories: blog
 ---
 <article>
