@@ -1,0 +1,21 @@
+---
+layout: post
+title: Updates
+date: 10-05-2016
+catagories: blog
+---
+<article>
+<p>
+I would like to start this blog post by thanking our viewers for their patience during the long process of getting this site up and running.</p>
+<p>It is my goal to have the site completely finished within the next few months but with only one developer working on the site at the moments, there is no way of knowing how long it will actually take.</p>
+<p>There will be several new sections added to the site very soon and the sections already on the site will be getting updated and hopefully completed.</p>
+<p>There are a few sections that will take quite a bit of time to complete but I am working as fast as possible.</p>
+<p>There has been talk recently of another developer joining the Program13 team. If this happens the way we would like it to, the site will be completed way ahead of schedule in which case there will probalby be a massive overhaul of the site in the coming months.</p>
+<p>I am also in the process of transfering the site to a new server and adding a new domain name so we can add even more awesome features.</p>
+<br/>
+<p>With so many things to do to this site and still so many things I would like to add, a little extra help would be great.</p>
+<p>If you are a website developer or enthusiast and would like to help work on the Program13 website, please contact me via the 'Contact Us' page on this site to see if you would be a good addition to the team.</p>
+<p>I am always looking for help and every developer counts so please feel free to contact me today.</p>
+<p>Thank you all again for being patient during construction and if you would like me to add something to the site please let me know.</p>
+<p>Stay tuned for more great content and tutorials to come.</p>
+<h5>Program13</h5>
