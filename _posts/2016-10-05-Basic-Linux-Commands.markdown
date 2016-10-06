@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Basic Linix Commands
+layout: post
+title: Basic Linux Commands
 date: 10-05-2016
 catagories: blog
 ---

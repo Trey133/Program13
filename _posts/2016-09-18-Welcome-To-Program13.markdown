@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Welcome To Program13
 date: 2016-09-18
 catagories: blog
