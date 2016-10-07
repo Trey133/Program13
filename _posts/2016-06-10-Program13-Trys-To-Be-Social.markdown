@@ -1,7 +1,7 @@
 ---
 layout: post
 title: P13 Trys To Be Social
-date: 2016-06-10
+date: 2016-10-06
 catagories: blog
 ---
 <article>
