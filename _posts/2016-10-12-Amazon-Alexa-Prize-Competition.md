@@ -9,5 +9,5 @@ date: 12-10-2016
 <p>Amazon will sponsor up to 10 teams and provide each team with $100,000 stipend, Alexa enabled devices, free AWS services and support from the Alexa skills kit (ASK) team.</p> 
 <p>Amazon Alexa Head scientist and president said in a statement, the socialbot should "be able to aquire knowledge and opinions from the web and express them in everyday context just as a human would."</p>
 <p>Participating teams will advance several areas of conversational AI including knowledge acquisition, natural language understanding, natural language generation, context modeling, commonsense reasoning and dialog planning. </p>
-<p>So of you and your team think you're up to the challenge, hurry over to <a href="https://developer.amazon.com/alexaprize/apply"  target="_blank">Amazon"</a> and put in your application today. </p>
+<p>So of you and your team think you're up to the challenge, hurry over to <a href="https://developer.amazon.com/alexaprize/apply"  target="_blank">Amazon</a> and put in your application today. </p>
 <p>Program13 wishes the best of luck to all dev teams involved in the competition and we can't wait to see what kind of great things you can create.</p>
